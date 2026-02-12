@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>頻道詳情 - Discord 私人頻道內容提取器</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="header-left">
+                <a href="/" class="back-link">← 返回首頁</a>
+                <h1 id="channel-title">頻道訊息</h1>
+            </div>
+            <nav class="nav-links">
+                <button onclick="exportChannelCSV()" class="btn btn-primary">下載 CSV</button>
+                <button onclick="exportChannelJSON()" class="btn btn-secondary">下載 JSON</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- 篩選區域 -->
+        <section class="filter-section">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="search-input">搜尋：</label>
+                    <input type="text" id="search-input" placeholder="搜尋訊息內容..." onkeyup="debounceSearch(event)">
+                </div>
+                <div class="filter-group">
+                    <label for="author-filter">作者：</label>
+                    <input type="text" id="author-filter" placeholder="輸入作者名稱..." onchange="applyFilters()">
+                </div>
+                <div class="filter-group">
+                    <label for="limit-select">顯示數量：</label>
+                    <select id="limit-select" onchange="applyFilters()">
+                        <option value="50">50</option>
+                        <option value="100" selected>100</option>
+                        <option value="200">200</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                    </select>
+                </div>
+                <button onclick="applyFilters()" class="btn btn-search">搜尋</button>
+            </div>
+        </section>
+
+        <!-- 訊息列表 -->
+        <section class="messages-section">
+            <div class="section-header">
+                <h2 id="messages-title">頻道訊息</h2>
+                <span class="message-count" id="message-count">載入中...</span>
+            </div>
+            <div class="messages-list" id="messages-list">
+                <p class="loading">載入中...</p>
+            </div>
+            <div class="load-more-container" id="load-more-container" style="display: none;">
+                <button onclick="loadMore()" class="btn btn-load-more">載入更多</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 訊息詳情 Modal -->
+    <div id="message-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Discord 私人頻道內容提取器 | <a href="/api/health">系統狀態</a></p>
+    </footer>
+
+    <script>
+        const channelId = '{{ channel_id }}';
+    </script>
+    <script src="/static/script.js"></script>
+    <script>
+        // 頁面初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadChannelMessages();
+            updatePageTitle();
+        });
+
+        function updatePageTitle() {
+            document.getElementById('channel-title').textContent = `頻道 ${channelId}`;
+            document.getElementById('messages-title').textContent = `頻道訊息`;
+        }
+
+        function loadChannelMessages() {
+            showLoading();
+            fetch(`/api/channel/${channelId}/messages`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                        return;
+                    }
+                    renderMessages(data.messages);
+                    updateMessageCount(data.total);
+                    hideLoadMore();
+                })
+                .catch(error => {
+                    showError('載入失敗: ' + error.message);
+                });
+        }
+
+        function applyFilters() {
+            const search = document.getElementById('search-input').value;
+            const author = document.getElementById('author-filter').value;
+            const limit = document.getElementById('limit-select').value;
+
+            let url = `/api/channel/${channelId}/messages?limit=${limit}`;
+            if (search) url += `&search=${encodeURIComponent(search)}`;
+            if (author) url += `&author=${encodeURIComponent(author)}`;
+
+            showLoading();
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                        return;
+                    }
+                    renderMessages(data.messages);
+                    updateMessageCount(data.total);
+                    hideLoadMore();
+                })
+                .catch(error => {
+                    showError('載入失敗: ' + error.message);
+                });
+        }
+
+        function exportChannelCSV() {
+            const search = document.getElementById('search-input').value;
+            const author = document.getElementById('author-filter').value;
+
+            let url = `/api/messages?channel_id=${channelId}`;
+            if (search) url += `&search=${encodeURIComponent(search)}`;
+            if (author) url += `&author=${encodeURIComponent(author)}`;
+
+            window.location.href = url;
+        }
+
+        function exportChannelJSON() {
+            const search = document.getElementById('search-input').value;
+            const author = document.getElementById('author-filter').value;
+
+            let url = `/api/export/json?channel_id=${channelId}`;
+            if (search) url += `&search=${encodeURIComponent(search)}`;
+            if (author) url += `&author=${encodeURIComponent(author)}`;
+
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>

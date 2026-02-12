@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>跟單助手 - 交易訊號</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #1a1a2e;
+            color: #eaeaea;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .header h1 {
+            color: #00d9ff;
+            font-size: 2em;
+        }
+        
+        .header p {
+            color: #888;
+            margin-top: 5px;
+        }
+        
+        .time-info {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .time-box {
+            text-align: center;
+            padding: 10px 20px;
+            background: rgba(0, 217, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .time-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00d9ff;
+        }
+        
+        .time-label {
+            font-size: 0.8em;
+            color: #888;
+        }
+        
+        .action-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #00d9ff, #00b8d9);
+            color: #1a1a2e;
+        }
+        
+        .btn-success {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+        }
+        
+        .btn-warning {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+            color: white;
+        }
+        
+        .sound-toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: #16213e;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .sound-icon { font-size: 1.5em; }
+        
+        .sound-toggle.enabled { border: 2px solid #4CAF50; }
+        .sound-toggle.disabled { border: 2px solid #f44336; }
+        
+        .refresh-info {
+            color: #666;
+            font-size: 0.9em;
+            margin-left: auto;
+        }
+        
+        /* ===== 訊號列表 ===== */
+        .signals-section {
+            background: #16213e;
+            border-radius: 16px;
+            padding: 25px;
+        }
+        
+        .section-title {
+            font-size: 1.5em;
+            color: #00d9ff;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .signal-list {
+            height: auto;
+            overflow: visible;
+        }
+        
+        .signal-card {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 5px solid;
+            transition: transform 0.2s;
+        }
+        
+        .signal-card:hover {
+            transform: translateX(5px);
+        }
+        
+        /* 買入邊框 */
+        .signal-card.buy {
+            border-left-color: #4CAF50;
+            box-shadow: 0 0 15px rgba(76, 175, 80, 0.2);
+        }
+        
+        /* 賣出邊框 */
+        .signal-card.sell {
+            border-left-color: #f44336;
+            box-shadow: 0 0 15px rgba(244, 67, 54, 0.2);
+        }
+        
+        /* 止盈邊框 */
+        .signal-card.profit {
+            border-left-color: #4CAF50;
+            box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
+        }
+        
+        /* 止損邊框 */
+        .signal-card.loss {
+            border-left-color: #f44336;
+            box-shadow: 0 0 15px rgba(244, 67, 54, 0.3);
+        }
+        
+        /* 一般訊息 */
+        .signal-card.info {
+            border-left-color: #2196F3;
+        }
+        
+        /* tuk 頻道 - 紫色 */
+        .signal-card.channel-tuk {
+            border-left-color: #9C27B0;
+            box-shadow: 0 0 15px rgba(156, 39, 176, 0.3);
+        }
+        
+        /* oculus 頻道 - 青藍色 */
+        .signal-card.channel-oculus {
+            border-left-color: #00BCD4;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+        }
+        
+        /* jpm 頻道 - 金色 */
+        .signal-card.channel-jpm {
+            border-left-color: #FF9800;
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.3);
+        }
+        
+        /* 頻道標籤顏色 */
+        .channel-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: bold;
+            color: white;
+            margin-left: 8px;
+        }
+        
+        .channel-tag-tuk {
+            background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+        }
+        
+        .channel-tag-oculus {
+            background: linear-gradient(135deg, #00BCD4, #0097A7);
+        }
+        
+        .channel-tag-jpm {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+        }
+        
+        /* 信息流切換標籤 */
+        .stream-tabs {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: rgba(22, 33, 62, 0.8);
+            border-radius: 12px;
+        }
+        
+        .stream-tab {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            color: #aaa;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .stream-tab:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+        
+        .stream-tab.active {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+        
+        .stream-tab[data-channel="tuk"].active {
+            border-color: #9C27B0;
+            box-shadow: 0 0 15px rgba(156, 39, 176, 0.4);
+        }
+        
+        .stream-tab[data-channel="oculus"].active {
+            border-color: #00BCD4;
+            box-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
+        }
+        
+        .stream-tab[data-channel="jpm"].active {
+            border-color: #FF9800;
+            box-shadow: 0 0 15px rgba(255, 152, 0, 0.4);
+        }
+        
+        .stream-tab[data-channel="all"].active {
+            border-color: #4CAF50;
+            box-shadow: 0 0 15px rgba(76, 175, 80, 0.4);
+        }
+        
+        .stream-avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .stream-avatar.tuk {
+            background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+        }
+        
+        .stream-avatar.oculus {
+            background: linear-gradient(135deg, #00BCD4, #0097A7);
+        }
+        
+        .stream-avatar.jpm {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+        }
+        
+        .stream-avatar.all {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+        }
+        
+        .stream-name {
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        .signal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .signal-meta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .signal-time {
+            font-size: 0.95em;
+            color: #888;
+        }
+        
+        /* 動作標籤 */
+        .action-tag {
+            font-size: 1.1em;
+            font-weight: bold;
+            padding: 8px 18px;
+            border-radius: 8px;
+        }
+        
+        .action-tag.buy {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+        }
+        
+        .action-tag.sell {
+            background: linear-gradient(135deg, #f44336, #C62828);
+            color: white;
+        }
+        
+        .action-tag.profit {
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+        }
+        
+        .action-tag.loss {
+            background: linear-gradient(135deg, #f44336, #C62828);
+            color: white;
+        }
+        
+        .action-tag.info {
+            background: linear-gradient(135deg, #2196F3, #1565C0);
+            color: white;
+        }
+        
+        /* ===== 解析結果 ===== */
+        .parsed-result {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .parsed-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .parsed-ticker {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        .parsed-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 12px;
+        }
+        
+        .detail-box {
+            text-align: center;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+        }
+        
+        .detail-label {
+            font-size: 0.8em;
+            color: #888;
+            margin-bottom: 5px;
+        }
+        
+        .detail-value {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        
+        .detail-value.green { color: #4CAF50; }
+        .detail-value.red { color: #f44336; }
+        .detail-value.blue { color: #00d9ff; }
+        .detail-value.white { color: #fff; }
+        
+        .detail-value.call { color: #4CAF50; }
+        .detail-value.put { color: #f44336; }
+        
+        /* ===== 原始數據 ===== */
+        .raw-data {
+            background: rgba(33, 150, 243, 0.1);
+            border: 1px solid rgba(33, 150, 243, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        
+        .raw-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        
+        .raw-title {
+            color: #2196F3;
+            font-weight: bold;
+            font-size: 0.95em;
+        }
+        
+        .raw-content {
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.9em;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            color: #b0bec5;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 15px;
+            border-radius: 8px;
+            overflow: visible;
+        }
+        
+        .raw-content.collapsed {
+            display: none;
+        }
+        
+        /* 新訊息閃爍 */
+        @keyframes flash-new {
+            0%, 100% { 
+                background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); 
+                box-shadow: 0 0 5px rgba(0, 217, 255, 0.3);
+            }
+            50% { 
+                background: linear-gradient(135deg, #2a3a4e 0%, #1a2a3e 100%); 
+                box-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
+            }
+        }
+        
+        /* TUK 未讀閃爍 - 紫色 */
+        @keyframes flash-tuk {
+            0% { background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); box-shadow: 0 0 5px rgba(156, 39, 176, 0.3); }
+            50% { background: linear-gradient(135deg, #2a1a3e 0%, #1a0f2e 100%); box-shadow: 0 0 25px rgba(156, 39, 176, 0.7); }
+            100% { background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); box-shadow: 0 0 5px rgba(156, 39, 176, 0.3); }
+        }
+        
+        /* OCULUS 未讀閃爍 - 青藍色 */
+        @keyframes flash-oculus {
+            0% { background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); box-shadow: 0 0 5px rgba(0, 188, 212, 0.3); }
+            50% { background: linear-gradient(135deg, #1a2a3e 0%, #0f1a2e 100%); box-shadow: 0 0 25px rgba(0, 188, 212, 0.7); }
+            100% { background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); box-shadow: 0 0 5px rgba(0, 188, 212, 0.3); }
+        }
+        
+        /* JPM 未讀閃爍 - 橙色 */
+        @keyframes flash-jpm {
+            0% { background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); box-shadow: 0 0 5px rgba(255, 152, 0, 0.3); }
+            50% { background: linear-gradient(135deg, #2a2a1e 0%, #1a1a0f 100%); box-shadow: 0 0 25px rgba(255, 152, 0, 0.7); }
+            100% { background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%); box-shadow: 0 0 5px rgba(255, 152, 0, 0.3); }
+        }
+        
+        /* 通用未讀閃爍 */
+        .signal-card.new {
+            animation: flash-new 1.5s ease-in-out infinite;
+            border: 2px solid rgba(0, 217, 255, 0.5);
+        }
+        
+        /* TUK 未讀樣式 */
+        .signal-card.channel-tuk.new {
+            animation: flash-tuk 1.5s ease-in-out infinite;
+            border: 2px solid rgba(156, 39, 176, 0.6);
+        }
+        
+        /* OCULUS 未讀樣式 */
+        .signal-card.channel-oculus.new {
+            animation: flash-oculus 1.5s ease-in-out infinite;
+            border: 2px solid rgba(0, 188, 212, 0.6);
+        }
+        
+        /* JPM 未讀樣式 */
+        .signal-card.channel-jpm.new {
+            animation: flash-jpm 1.5s ease-in-out infinite;
+            border: 2px solid rgba(255, 152, 0, 0.6);
+        }
+        
+        /* 己讀後的卡片樣式 */
+        .signal-card.read {
+            opacity: 0.85;
+        }
+        
+        /* 點擊提示 */
+        .click-hint {
+            font-size: 0.75em;
+            color: #00d9ff;
+            margin-left: 10px;
+            animation: pulse 2s infinite;
+        }
+        
+        /* 己讀按鈕樣式 */
+        .btn-read {
+            padding: 6px 14px;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.85em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .btn-read:hover {
+            background: linear-gradient(135deg, #66BB6A, #43A047);
+            transform: scale(1.05);
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+        
+        /* 篩選按鈕 */
+        .filter-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 10px 20px;
+            background: #16213e;
+            border: 2px solid transparent;
+            border-radius: 8px;
+            color: #eaeaea;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn:hover {
+            border-color: #00d9ff;
+        }
+        
+        .filter-btn.active {
+            background: #00d9ff;
+            color: #1a1a2e;
+        }
+        
+        .no-signals {
+            text-align: center;
+            padding: 60px 20px;
+            color: #888;
+        }
+        
+        .no-signals-icon { font-size: 4em; margin-bottom: 20px; }
+        
+        @media (max-width: 768px) {
+            .header { flex-direction: column; text-align: center; }
+            .parsed-details { grid-template-columns: repeat(2, 1fr); }
+            .parsed-ticker { font-size: 1.5em; }
+            .signal-header { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>跟單助手</h1>
+                <p>合併所有頻道 · 顯示原始數據</p>
+            </div>
+            <div class="time-info">
+                <div class="time-box">
+                    <div class="time-value" id="macau-time">--:--</div>
+                    <div class="time-label">澳門時間</div>
+                </div>
+                <div class="time-box">
+                    <div class="time-value" id="us-time">--:--</div>
+                    <div class="time-label">美國時間</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 三個獨立信息流切換 -->
+        <div class="stream-tabs">
+            <button class="stream-tab active" data-channel="tuk" onclick="setStream('tuk', this)">
+                <span class="stream-avatar tuk">T</span>
+                <span class="stream-name">TUK</span>
+            </button>
+            <button class="stream-tab" data-channel="oculus" onclick="setStream('oculus', this)">
+                <span class="stream-avatar oculus">O</span>
+                <span class="stream-name">OCULUS</span>
+            </button>
+            <button class="stream-tab" data-channel="jpm" onclick="setStream('jpm', this)">
+                <span class="stream-avatar jpm">J</span>
+                <span class="stream-name">JPM</span>
+            </button>
+            <button class="stream-tab" data-channel="all" onclick="setStream('all', this)">
+                <span class="stream-avatar all">📊</span>
+                <span class="stream-name">全部</span>
+            </button>
+        </div>
+        
+        <div class="action-bar">
+            <button class="btn btn-primary" onclick="fetchData()">刷新</button>
+            <button class="btn btn-success" onclick="testSound()">測試聲音</button>
+            <button class="btn btn-warning" onclick="markAllAsRead()">✓ 全部己讀</button>
+            <div class="sound-toggle enabled" id="sound-toggle" onclick="toggleSound()">
+                <span class="sound-icon" id="sound-icon">🔔</span>
+                <span id="sound-status">開</span>
+            </div>
+            <a href="/debug" class="btn btn-warning">調試</a>
+            <span class="refresh-info" id="last-update">--</span>
+        </div>
+        
+        <div class="filter-bar">
+            <button class="filter-btn active" onclick="setFilter('all', this)">全部</button>
+            <button class="filter-btn" onclick="setFilter('buy', this)">買入</button>
+            <button class="filter-btn" onclick="setFilter('sell', this)">賣出</button>
+            <button class="filter-btn" onclick="setFilter('profit', this)">止盈</button>
+            <button class="filter-btn" onclick="setFilter('loss', this)">止損</button>
+        </div>
+        
+        <div class="signals-section">
+            <div class="section-title">訊號流</div>
+            <div class="signal-list" id="signal-list">
+                <div class="no-signals">
+                    <div class="no-signals-icon">📭</div>
+                    <h3>等待訊號...</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // 調試開關 (true = 開啟, false = 關閉)
+        const DEBUG = true;
+        
+        // 頻道 ID 對應名稱
+        const CHANNEL_NAMES = {
+            '1454140095442583715': 'tuk',
+            '1459878042955677869': 'oculus',
+            '1458011589624987699': 'jpm'
+        };
+        
+        // 全域變量定義
+        let messages = [];
+        let currentFilter = 'all';
+        let currentStream = 'all'; // 當前選擇的信息流: 'tuk', 'oculus', 'jpm', 'all'
+        let soundEnabled = true;
+        let lastMessageCount = 0;
+        let readIds = new Set(); // 已讀訊息ID集合
+        
+        function getChannelName(channelId) {
+            return CHANNEL_NAMES[channelId] || channelId || '未知頻道';
+        }
+        
+        function getChannelClass(channelId) {
+            const name = CHANNEL_NAMES[channelId];
+            if (name) return 'channel-' + name;
+            return '';
+        }
+        
+        // 追蹤每個頻道的最後看到訊息時間戳
+        let lastSeenPerStream = {
+            'tuk': null,
+            'oculus': null,
+            'jpm': null,
+            'all': null
+        };
+        
+        // 信息流切換
+        function setStream(stream, btn) {
+            currentStream = stream;
+            
+            // 更新按鈕狀態
+            document.querySelectorAll('.stream-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // 重新渲染
+            renderMessages();
+            
+            // 停止鈴聲（切換頻道時重新監控）
+            stopNotificationSound();
+            
+            // 重置該頻道的已讀狀態，讓新訊息可以再次觸發鈴聲
+            lastSeenPerStream[stream] = null;
+            
+            // 標記該流的所有訊息為已讀
+            const channelNames = stream === 'all' ? ['tuk', 'oculus', 'jpm'] : [stream];
+            messages.forEach(m => {
+                const channelName = CHANNEL_NAMES[m.channel_id];
+                if (channelNames.includes(channelName)) {
+                    const msgId = m.id || 'msg-' + messages.indexOf(m);
+                    readIds.add(msgId);
+                }
+            });
+        }
+        
+        // 買入音效 - 上升音
+        function playBuySound() {
+            if (!soundEnabled) return;
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.frequency.setValueAtTime(523, ctx.currentTime);
+            osc.frequency.setValueAtTime(659, ctx.currentTime + 0.1);
+            osc.frequency.setValueAtTime(784, ctx.currentTime + 0.2);
+            
+            gain.gain.setValueAtTime(0.3, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
+            
+            osc.start(ctx.currentTime);
+            osc.stop(ctx.currentTime + 0.4);
+        }
+        
+        // 賣出音效 - 下降音
+        function playSellSound() {
+            if (!soundEnabled) return;
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.frequency.setValueAtTime(440, ctx.currentTime);
+            osc.frequency.setValueAtTime(349, ctx.currentTime + 0.1);
+            osc.frequency.setValueAtTime(262, ctx.currentTime + 0.2);
+            
+            gain.gain.setValueAtTime(0.3, ctx.currentTime);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.4);
+            
+            osc.start(ctx.currentTime);
+            osc.stop(ctx.currentTime + 0.4);
+        }
+        
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            const toggle = document.getElementById('sound-toggle');
+            const icon = document.getElementById('sound-icon');
+            const status = document.getElementById('sound-status');
+            
+            if (soundEnabled) {
+                toggle.className = 'sound-toggle enabled';
+                icon.textContent = '🔔';
+                status.textContent = '開';
+            } else {
+                toggle.className = 'sound-toggle disabled';
+                icon.textContent = '🔕';
+                status.textContent = '關';
+            }
+        }
+
+        // ============ 新訊息監控（客戶端音效）============
+        
+        let notificationSoundInterval = null;  // 鈴聲循環
+
+        // 播放通知鈴聲（嗶嗶嗶）
+        function playNotificationSound() {
+            if (!soundEnabled) return;
+            
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            // 嗶嗶嗶模式
+            osc.type = 'square';
+            osc.frequency.setValueAtTime(1000, ctx.currentTime);
+            
+            // 嗶聲 200ms，休息 150ms，重複
+            gain.gain.setValueAtTime(0.3, ctx.currentTime);
+            
+            osc.start(ctx.currentTime);
+            osc.stop(ctx.currentTime + 0.2);
+        }
+
+        // 停止通知鈴聲
+        function stopNotificationSound() {
+            if (notificationSoundInterval) {
+                clearInterval(notificationSoundInterval);
+                notificationSoundInterval = null;
+            }
+        }
+
+        // 檢查新訊息並播放鈴聲（按頻道監控）
+        async function checkNewMessages() {
+            try {
+                const response = await fetch('/api/messages/latest');
+                const data = await response.json();
+                
+                if (data.has_new && messages.length > 0) {
+                    const latestMsg = messages[0];  // 最新訊息
+                    const msgChannelId = latestMsg.channel_id;
+                    const msgChannelName = CHANNEL_NAMES[msgChannelId] || msgChannelId;
+                    
+                    // 判斷是否應該播放鈴聲
+                    let shouldAlert = false;
+                    
+                    if (currentStream === 'all') {
+                        // 全部模式：只有未讀訊息才提醒
+                        const msgId = latestMsg.id || 'msg-0';
+                        if (!readIds.has(msgId)) {
+                            shouldAlert = true;
+                        }
+                    } else {
+                        // 單頻道模式：檢查新訊息是否來自當前頻道
+                        if (msgChannelName === currentStream) {
+                            // 檢查這個頻道是否有未讀訊息
+                            const unreadInStream = messages.filter(m => {
+                                const channelName = CHANNEL_NAMES[m.channel_id];
+                                return channelName === currentStream;
+                            }).filter(m => {
+                                const mid = m.id || 'msg-' + messages.indexOf(m);
+                                return !readIds.has(mid);
+                            });
+                            
+                            if (unreadInStream.length > 0) {
+                                shouldAlert = true;
+                            }
+                        }
+                    }
+                    
+                    // 播放鈴聲
+                    if (shouldAlert && soundEnabled) {
+                        playNotificationSound();
+                        
+                        // 開始持續播放鈴聲（每 1.5 秒）
+                        if (!notificationSoundInterval) {
+                            notificationSoundInterval = setInterval(() => {
+                                // 重新檢查是否還有未讀
+                                let stillHasUnread = false;
+                                
+                                if (currentStream === 'all') {
+                                    stillHasUnread = messages.some(m => {
+                                        const mid = m.id || 'msg-' + messages.indexOf(m);
+                                        return !readIds.has(mid);
+                                    });
+                                } else {
+                                    stillHasUnread = messages.some(m => {
+                                        const channelName = CHANNEL_NAMES[m.channel_id];
+                                        if (channelName !== currentStream) return false;
+                                        const mid = m.id || 'msg-' + messages.indexOf(m);
+                                        return !readIds.has(mid);
+                                    });
+                                }
+                                
+                                if (stillHasUnread && soundEnabled) {
+                                    playNotificationSound();
+                                } else {
+                                    stopNotificationSound();
+                                }
+                            }, 1500);
+                        }
+                    } else if (!shouldAlert) {
+                        stopNotificationSound();
+                    }
+                }
+            } catch (e) {
+                console.log('檢查新訊息失敗:', e);
+            }
+        }
+
+        // 開始監控新訊息
+        function startMessageMonitoring() {
+            // 每 3 秒檢查一次新訊息
+            setInterval(checkNewMessages, 3000);
+        }
+
+        // 標記訊息為己讀
+        async function markAsRead(msgId) {
+            if (!readIds.has(msgId)) {
+                readIds.add(msgId);
+                const card = document.getElementById('card-' + msgId);
+                if (card) {
+                    card.classList.remove('new');
+                    card.classList.add('read');
+                }
+                // 移除提示文字
+                const hint = document.getElementById('hint-' + msgId);
+                if (hint) hint.remove();
+
+                // 檢查當前視圖是否還有未讀訊息
+                let hasUnread = false;
+                
+                if (currentStream === 'all') {
+                    hasUnread = messages.some(m => {
+                        const mid = m.id || 'msg-' + messages.indexOf(m);
+                        return !readIds.has(mid);
+                    });
+                } else {
+                    hasUnread = messages.some(m => {
+                        const channelName = CHANNEL_NAMES[m.channel_id];
+                        if (channelName !== currentStream) return false;
+                        const mid = m.id || 'msg-' + messages.indexOf(m);
+                        return !readIds.has(mid);
+                    });
+                }
+
+                if (!hasUnread) {
+                    stopNotificationSound();  // 停止客戶端鈴聲
+                }
+            }
+        }
+
+        // 標記所有為己讀
+        async function markAllAsRead() {
+            messages.forEach(m => {
+                const msgId = m.id || 'msg-' + messages.indexOf(m);
+                markAsRead(msgId);
+            });
+            // 停止鈴聲
+            stopNotificationSound();
+        }
+        
+        function testSound() {
+            playBuySound();
+            setTimeout(playSellSound, 500);
+        }
+        
+        function setFilter(filter, btn) {
+            currentFilter = filter;
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            renderMessages();
+        }
+        
+        async function fetchData() {
+            try {
+                const response = await fetch('/api/trading/messages?limit=200');
+                const data = await response.json();
+                
+                const newCount = data.messages?.length || 0;
+                if (newCount > lastMessageCount && lastMessageCount > 0 && messages.length > 0) {
+                    const latestMsg = data.messages[0];
+                    if (latestMsg.has_order) {
+                        const info = parseMessage(latestMsg.content);
+                        if (info.action === 'buy') {
+                            playBuySound();
+                        } else {
+                            playSellSound();
+                        }
+                    }
+                }
+                lastMessageCount = newCount;
+                
+                messages = data.messages || [];
+                
+                // 標記新訊息（只對當前信息流閃爍）
+                messages.forEach(m => {
+                    const msgId = m.id || 'msg-' + messages.indexOf(m);
+                    const channelName = CHANNEL_NAMES[m.channel_id];
+                    
+                    // 檢查訊息是否屬於當前選擇的信息流
+                    const isCurrentStream = currentStream === 'all' || channelName === currentStream;
+                    
+                    // 找出該信息流中訊息的索引
+                    const streamMessages = messages.filter(msg => {
+                        const cn = CHANNEL_NAMES[msg.channel_id];
+                        return currentStream === 'all' || cn === currentStream;
+                    });
+                    const streamIndex = streamMessages.indexOf(m);
+                    
+                    if (isCurrentStream && streamIndex < 5 && !readIds.has(msgId)) {
+                        // 當前流的最新5條，保持未讀狀態（會閃爍）
+                    } else {
+                        readIds.add(msgId); // 其他訊息標為已讀
+                    }
+                });
+                
+                // 更新統計（已移除）
+                
+                updateTimes();
+                renderMessages();
+                
+                document.getElementById('last-update').textContent = 
+                    '更新: ' + new Date().toLocaleTimeString('zh-TW');
+                
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+        
+        function updateTimes() {
+            const now = new Date();
+            const macau = new Date(now.toLocaleString('en-US', {timeZone: 'Asia/Macau'}));
+            const us = new Date(now.toLocaleString('en-US', {timeZone: 'America/New_York'}));
+            
+            document.getElementById('macau-time').textContent = 
+                macau.toLocaleTimeString('zh-TW', {hour: '2-digit', minute: '2-digit'});
+            document.getElementById('us-time').textContent = 
+                us.toLocaleTimeString('zh-TW', {hour: '2-digit', minute: '2-digit'});
+        }
+        
+        function parseMessage(content) {
+            content = content || '';
+            const lower = content.toLowerCase();
+            
+            if (DEBUG) console.log('[解析] 內容:', content.substring(0, 100), '| 長度:', content.length);
+            
+            // ========== 1. 檢測 OCULUS Embed 格式 ==========
+            // Ticker | $SPX, Strike | 6980C, Expiry | 0dte, Entry | 2.10
+            const embedTicker = content.match(/(?:Ticker|股票代码)\s*[|]\s*\$?([A-Z]{2,})/i);
+            const embedStrike = content.match(/(?:Strike|行权价)\s*[|]\s*(\d+)([pcCP])/i);
+            if (embedTicker && embedStrike && embedTicker[1] !== 'OCULUS') {
+                const ticker = embedTicker[1].toUpperCase();
+                const embedEntry = content.match(/(?:Entry|入场|入場)\s*[|]\s*\$?([\d.]+)/i);
+                const embedExpiry = content.match(/(?:Expiry|到期日)\s*[|]\s*(\d{1,2}\/\d{1,2}|0dte)/i);
+                
+                let expiration = '';
+                if (embedExpiry) {
+                    if (embedExpiry[1].toLowerCase().includes('0dte')) {
+                        const today = new Date();
+                        expiration = `${today.getMonth()+1}/${today.getDate()} (今天到期)`;
+                    } else {
+                        expiration = embedExpiry[1];
+                    }
+                }
+                
+                const isLotto = /Lotto|彩票/i.test(content);
+                const result = {
+                    ticker,
+                    strikePrice: embedStrike[1],
+                    optionType: embedStrike[2].toUpperCase(),
+                    price: embedEntry ? embedEntry[1] : '',
+                    action: 'buy',
+                    actionText: '🟢 買入' + (isLotto ? ' 🎰' : ''),
+                    expiration: expiration + (isLotto ? ' ⚠️高風險' : '')
+                };
+                if (DEBUG) console.log('[結果] OCULUS Embed:', result);
+                return result;
+            }
+            
+            // ========== 2. 檢測 OCULUS 一般格式 ==========
+            // Ticker: $QQQ, Strike: 64C, Expiry: 2/11, Entry: 1.61
+            const oculusTicker = content.match(/Ticker\s*[:=]?\s*\$([A-Z]{2,})/i) || content.match(/股票代码\s*[:=]?\s*\$([A-Z]{2,})/i);
+            const oculusStrike = content.match(/(?:Strike|行权价)\s*[:=]?\s*(\d+)([pcCP])/i);
+            if (oculusTicker && oculusStrike) {
+                const ticker = oculusTicker[1].toUpperCase();
+                const oculusEntry = content.match(/(?:Entry|入场|入場)\s*[:=]?\s*\$?([\d.]+)/i);
+                const oculusExpiry = content.match(/(?:Expiry|到期日)\s*[:=]?\s*(\d{1,2}\/\d{1,2}|0dte)/i);
+                
+                let expiration = '';
+                if (oculusExpiry) {
+                    if (oculusExpiry[1].toLowerCase().includes('0dte')) {
+                        const today = new Date();
+                        expiration = `${today.getMonth()+1}/${today.getDate()} (今天到期)`;
+                    } else {
+                        expiration = oculusExpiry[1];
+                    }
+                }
+                
+                const isLotto = /Lotto|彩票/i.test(content);
+                const result = {
+                    ticker,
+                    strikePrice: oculusStrike[1],
+                    optionType: oculusStrike[2].toUpperCase(),
+                    price: oculusEntry ? oculusEntry[1] : '',
+                    action: 'buy',
+                    actionText: '🟢 買入' + (isLotto ? ' 🎰' : ''),
+                    expiration: expiration + (isLotto ? ' ⚠️高風險' : '')
+                };
+                if (DEBUG) console.log('[結果] OCULUS 一般:', result);
+                return result;
+            }
+            
+            // ========== 3. 檢測 BTO 買入格式 (包含前綴) ==========
+            // 格式: BTO $QQQ 630c 01, BTO $QQQ 613p 02/10 @0.69, $QQQ 630c 01, TSLA 437.5c
+            // 使用全局搜索找到內容中的模式
+            const btoPattern = /(?:BTO\s+\$?|[\$\s]|^)([A-Z]{2,})\s+(\d+\.?\d*)([PpCc])\s*(\d{1,2}(?:\/\d{1,2})?)/i;
+            const btoMatch = content.match(btoPattern);
+            
+            if (btoMatch) {
+                const ticker = btoMatch[1].toUpperCase();
+                const strikePrice = btoMatch[2];
+                const optionType = btoMatch[3].toUpperCase();
+                const expiry = btoMatch[4];
+                
+                // 解析價格 (@價格)
+                const priceMatch = content.match(/@\$?([\d.]+)/);
+                const price = priceMatch ? priceMatch[1] : '';
+                
+                if (DEBUG) {
+                    console.log('[BTO] 原始:', content);
+                    console.log('[BTO] 解析: ticker=' + ticker + ', strike=' + strikePrice + ', type=' + optionType + ', expiry=' + expiry + ', price=' + price);
+                }
+                
+                // 判斷動作
+                let action = 'buy';
+                let actionText = '🟢 買入';
+                
+                if (lower.includes('止損') || lower.includes('止损') || lower.includes('止损了') || lower.includes('stoploss')) {
+                    action = 'loss';
+                    actionText = '🔴 止損';
+                } else if (lower.includes('平倉') || lower.includes('平仓') || lower.includes('close') || lower.includes('all out')) {
+                    action = 'close';
+                    actionText = '🔴 平倉';
+                } else if (lower.includes('+') && / \+?\d+%/.test(lower)) {
+                    action = 'profit';
+                    actionText = '💰 止盈';
+                }
+                
+                const result = {
+                    ticker,
+                    strikePrice,
+                    optionType,
+                    price,
+                    action,
+                    actionText,
+                    expiration: expiry
+                };
+                if (DEBUG) console.log('[結果] BTO格式:', result);
+                return result;
+            }
+            
+            // ========== 4. 檢測 JPM Update 格式 ==========
+            // 格式: 
+            // Update SPY 02/10 693P @1.22 (+60%) 
+            // 或換行:
+            // Update
+            // SPY 02/10 693P @1.22 (+60%)
+            // 或:
+            // SPY 02/10 693P @1.22 (+60%) 🔥
+            const jpmPattern = /(?:Update\s*[\n\r]+)?([A-Z]{2,})\s+(\d{1,2})\/(\d{1,2})\s+(\d+\.?\d*)([PpCc])\s*@\$?([\d.]+).*?\(?([+\-]?\d+)%\)?/i;
+            const jpmMatch = content.match(jpmPattern);
+            
+            if (jpmMatch) {
+                const ticker = jpmMatch[1].toUpperCase();
+                const expMonth = jpmMatch[2];
+                const expDay = jpmMatch[3];
+                const strikePrice = jpmMatch[4];
+                const optionType = jpmMatch[5].toUpperCase();
+                const price = jpmMatch[6];
+                const pnl = parseFloat(jpmMatch[7]);
+                
+                if (DEBUG) {
+                    console.log('[JPM] ✅ 匹配成功');
+                    console.log('[JPM] 解析: ticker=' + ticker + ', expiry=' + expMonth + '/' + expDay + ', strike=' + strikePrice + ', type=' + optionType + ', price=' + price + ', pnl=' + pnl + '%');
+                }
+                
+                return {
+                    ticker,
+                    strikePrice,
+                    optionType,
+                    price,
+                    action: 'update',
+                    actionText: '🟡 更新',
+                    expiration: expMonth + '/' + expDay,
+                    pnl: pnl
+                };
+            }
+            
+            // ========== 4.2 檢測 JPM Close 格式 ==========
+            // 格式: 
+            // Close SPY 02/10 693P (all out @.81)
+            // 或換行:
+            // Close
+            // SPY 02/10 693P (all out @.81) 🔥
+            const jpmClosePattern = /(?:Close\s*[\n\r]+)?([A-Z]{2,})\s+(\d{1,2})\/(\d{1,2})\s+(\d+\.?\d*)([PpCc])\s*(?:\([^)]*out.*?@\$?([\d.]+)\)[^)]*\))?\s*[🔥]?/i;
+            const jpmCloseMatch = content.match(jpmClosePattern);
+            
+            if (jpmCloseMatch && /close|all out|平倉/i.test(content)) {
+                const ticker = jpmCloseMatch[1].toUpperCase();
+                const expMonth = jpmCloseMatch[2];
+                const expDay = jpmCloseMatch[3];
+                const strikePrice = jpmCloseMatch[4];
+                const optionType = jpmCloseMatch[5].toUpperCase();
+                const price = jpmCloseMatch[6] || '';
+                
+                if (DEBUG) {
+                    console.log('[JPM Close] ✅ 匹配成功');
+                    console.log('[JPM Close] 解析: ticker=' + ticker + ', expiry=' + expMonth + '/' + expDay + ', strike=' + strikePrice + ', type=' + optionType + ', price=' + price);
+                }
+                
+                return {
+                    ticker,
+                    strikePrice,
+                    optionType,
+                    price,
+                    action: 'close',
+                    actionText: '🔴 平倉',
+                    expiration: expMonth + '/' + expDay,
+                    notes: '已平倉'
+                };
+            }
+            
+            if (DEBUG && /JpmInvestments/i.test(content)) {
+                console.log('[JPM] ❌ 未匹配，完整內容:', content);
+            }
+            
+            // ========== 5. 檢測純粹獲利百分比格式 ==========
+            const pnlPattern = /([A-Z]{2,})\s*[+\-](\d+)%/i;
+            const pnlMatch = content.match(pnlPattern);
+            if (pnlMatch) {
+                const result = {
+                    ticker: pnlMatch[1].toUpperCase(),
+                    strikePrice: '',
+                    optionType: '',
+                    price: '',
+                    action: 'profit',
+                    actionText: '💰 止盈',
+                    expiration: '',
+                    pnl: parseFloat(pnlMatch[2])
+                };
+                if (DEBUG) console.log('[結果] 止盈信號:', result);
+                return result;
+            }
+            
+            // ========== 6. 默認返回一般訊息 ==========
+            if (DEBUG) console.log('[結果] 一般訊息');
+            return { ticker: '', action: 'info', actionText: '💬 訊息' };
+        }
+        
+        function renderMessages() {
+            const container = document.getElementById('signal-list');
+            
+            let filtered = messages;
+            
+            // 過濾無效 JPM 訊息
+            filtered = filtered.filter(m => {
+                const content = (m.content || '').trim();
+                const isInvalid = /^JpmInvestments?\s*[:：]?\s*@JPM\s*$/i.test(content) ||
+                                  /^Jpm\s*$/i.test(content) ||
+                                  /^(Unbounded|无界|Bounded|有界)$/i.test(content);
+                if (isInvalid && DEBUG) console.log('[過濾] 移除:', content.substring(0, 30));
+                return !isInvalid;
+            });
+            
+            // 先按信息流過濾
+            if (currentStream !== 'all') {
+                filtered = messages.filter(m => {
+                    const channelName = CHANNEL_NAMES[m.channel_id];
+                    return channelName === currentStream;
+                });
+            }
+            
+            // 再按動作過濾
+            if (currentFilter !== 'all') {
+                filtered = filtered.filter(m => {
+                    const info = parseMessage(m.content);
+                    const isTradingCard = m.has_order || (info.ticker && info.action === 'buy');
+                    
+                    if (!isTradingCard) return currentFilter === 'info';
+                    return info.action === currentFilter;
+                });
+            }
+            
+            if (filtered.length === 0) {
+                container.innerHTML = `
+                    <div class="no-signals">
+                        <div class="no-signals-icon">📭</div>
+                        <h3>暫無訊號</h3>
+                    </div>
+                `;
+                return;
+            }
+            
+            container.innerHTML = filtered.map((m, idx) => {
+                const info = parseMessage(m.content);
+                const cardClass = info.action;
+                const msgId = m.id || 'msg-' + idx;
+                const isUnread = !readIds.has(msgId);
+                
+                // 判斷是否為交易卡片：
+                // 1. 有 has_order
+                // 2. 解析出 ticker 且是買入/更新/平倉動作
+                const isTradingCard = m.has_order || (info.ticker && ['buy', 'update', 'close'].includes(info.action));
+                
+                // 一般訊息卡片 (沒有交易訂單也沒有解析出 OCULUS/JPM 格式)
+                if (!isTradingCard) {
+                    return `
+                        <div class="signal-card info ${getChannelClass(m.channel_id)} ${isUnread ? 'new' : 'read'}" 
+                             id="card-${msgId}" 
+                             title="點擊卡片標記為己讀">
+                            <div class="signal-header">
+                                <div class="signal-meta">
+                                    <span class="signal-time">${formatTime(m.timestamp)}</span>
+                                    <span class="channel-tag channel-tag-${CHANNEL_NAMES[m.channel_id] || ''}">${getChannelName(m.channel_id)}</span>
+                                    ${isUnread ? '<span class="click-hint" id="hint-' + msgId + '">● 新訊息</span>' : ''}
+                                </div>
+                                <div style="display: flex; gap: 8px; align-items: center;">
+                                    ${isUnread ? `<button class="btn-read" onclick="markAsRead('${msgId}')">✓ 己讀</button>` : ''}
+                                    <span class="action-tag info">${info.actionText}</span>
+                                </div>
+                            </div>
+                            <div class="raw-data">
+                                <div class="raw-content">${escapeHtml(m.content || '')}</div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // 交易訊息卡片
+                const optionType = info.optionType ? info.optionType.toUpperCase() : '';
+                const optionClass = optionType === 'C' ? 'call' : (optionType === 'P' ? 'put' : '');
+                const optionText = optionType === 'C' ? 'CALL' : (optionType === 'P' ? 'PUT' : '');
+                const entryPrice = info.price || '---';
+                
+                return `
+                    <div class="signal-card ${cardClass} ${getChannelClass(m.channel_id)} ${isUnread ? 'new' : 'read'}" 
+                         id="card-${msgId}" 
+                         title="點擊卡片標記為己讀">
+                        <div class="signal-header">
+                            <div class="signal-meta">
+                                <span class="signal-time">${formatTime(m.timestamp)}</span>
+                                <span class="channel-tag channel-tag-${CHANNEL_NAMES[m.channel_id] || ''}">${getChannelName(m.channel_id)}</span>
+                                ${isUnread ? '<span class="click-hint" id="hint-' + msgId + '">● 新訊息</span>' : ''}
+                            </div>
+                            <div style="display: flex; gap: 8px; align-items: center;">
+                                ${isUnread ? `<button class="btn-read" onclick="markAsRead('${msgId}')">✓ 己讀</button>` : ''}
+                                <span class="action-tag ${cardClass}">${info.actionText}</span>
+                            </div>
+                        </div>
+                        
+                        ${info.ticker ? `
+                        <div class="parsed-result" onclick="event.stopPropagation()">
+                            <div class="parsed-header">
+                                <span class="parsed-ticker">$${info.ticker}</span>
+                                <span style="color: ${optionClass === 'call' ? '#4CAF50' : optionClass === 'put' ? '#f44336' : '#888'}; font-weight: bold;">
+                                    ${optionText}${optionText && info.expiration ? ' · ' : ''}${info.expiration || ''}
+                                </span>
+                                ${info.pnl ? `<span style="color: ${info.pnl >= 0 ? '#4CAF50' : '#f44336'}; font-weight: bold; margin-left: 8px;">${info.pnl >= 0 ? '+' : ''}${info.pnl}%</span>` : ''}
+                            </div>
+                            <div class="parsed-details">
+                                <div class="detail-box">
+                                    <div class="detail-label">履約價</div>
+                                    <div class="detail-value white">$${info.strikePrice || '---'}</div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="detail-label">執行價格</div>
+                                    <div class="detail-value ${cardClass === 'buy' ? 'green' : cardClass === 'update' ? 'orange' : 'blue'}">$${entryPrice}</div>
+                                </div>
+                                <div class="detail-box">
+                                    <div class="detail-label">訂單狀態</div>
+                                    <div class="detail-value ${cardClass === 'buy' ? 'green' : cardClass === 'sell' || cardClass === 'close' ? 'red' : cardClass === 'update' ? 'orange' : 'blue'}">
+                                        ${info.action === 'buy' ? '待平倉' : info.action === 'update' ? info.notes || '更新' : info.actionText.replace(/[🟢🔴🟡]/g, '').trim()}
+                                    </div>
+                                </div>
+                            </div>
+                            ${info.notes && !info.pnl ? `
+                            <div class="parsed-notes" style="margin-top: 8px; font-size: 0.9em; color: #888;">
+                                📝 ${info.notes}
+                            </div>
+                            ` : ''}
+                        </div>
+                        ` : ''}
+                        
+                        <div class="raw-data">
+                            <div class="raw-content">${escapeHtml(m.content || '')}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        function formatTime(isoString) {
+            if (!isoString) return '-';
+            try {
+                const date = new Date(isoString);
+                if (isNaN(date.getTime())) return '-';
+                return date.toLocaleString('zh-TW', {
+                    month: '2-digit',
+                    day: '2-digit',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            } catch { return '-'; }
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        // 每 2 秒刷新
+        setInterval(fetchData, 2000);
+        fetchData();
+        
+        // 開始監控新訊息（客戶端音效）
+        startMessageMonitoring();
+        
+        // 更新時間顯示
+        updateTimes();
+        setInterval(updateTimes, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交易追蹤器 - 調試頁面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #1a1a2e;
+            color: #eaeaea;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        h1 {
+            color: #00d9ff;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            color: #4CAF50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .section {
+            background: #16213e;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .stat-item {
+            background: #0f0f23;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #00d9ff;
+        }
+        
+        .stat-label {
+            color: #888;
+            font-size: 0.9em;
+        }
+        
+        pre {
+            background: #0f0f23;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-size: 0.85em;
+            line-height: 1.5;
+        }
+        
+        .success {
+            color: #4CAF50;
+        }
+        
+        .error {
+            color: #f44336;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #00d9ff;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .btn {
+            background: #00d9ff;
+            color: #1a1a2e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .btn:hover {
+            background: #00b8d9;
+        }
+        
+        .btn-red {
+            background: #f44336;
+            color: white;
+        }
+        
+        .btn-red:hover {
+            background: #d32f2f;
+        }
+        
+        #status {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            display: none;
+        }
+        
+        #status.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a href="/trading" class="back-link">← 返回交易儀表板</a>
+    
+    <h1>🔧 交易追蹤器 - 調試頁面</h1>
+    
+    <div class="section">
+        <h2>📊 統計數據</h2>
+        <div class="stat-grid">
+            <div class="stat-item">
+                <div class="stat-value" id="stat-total-messages">-</div>
+                <div class="stat-label">總訊息</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat-total-orders">-</div>
+                <div class="stat-label">總訂單</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat-open-orders">-</div>
+                <div class="stat-label">持倉中</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat-closed-orders">-</div>
+                <div class="stat-label">已平倉</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="stat-expired-orders">-</div>
+                <div class="stat-label">已過期</div>
+            </div>
+        </div>
+        
+        <button class="btn" onclick="refreshData()">🔄 刷新數據</button>
+        <button class="btn" onclick="clearData()">🗑️ 清除所有數據</button>
+        <div id="status"></div>
+    </div>
+    
+    <div class="section">
+        <h2>📝 所有訊息 (<span id="messages-count">0</span>)</h2>
+        <pre id="messages-data">載入中...</pre>
+    </div>
+    
+    <div class="section">
+        <h2>📈 所有訂單 (<span id="orders-count">0</span>)</h2>
+        <pre id="orders-data">載入中...</pre>
+    </div>
+    
+    <div class="section">
+        <h2>🔍 原始 API 響應</h2>
+        <pre id="raw-data">載入中...</pre>
+    </div>
+    
+    <script>
+        function showStatus(message, isError = false) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = isError ? 'error' : 'success';
+            status.classList.add('show');
+            setTimeout(() => status.classList.remove('show'), 5000);
+        }
+        
+        async function refreshData() {
+            try {
+                const response = await fetch('/api/trading');
+                const data = await response.json();
+                
+                // 更新統計
+                if (data.statistics) {
+                    document.getElementById('stat-total-messages').textContent = data.statistics.total_messages || 0;
+                    document.getElementById('stat-total-orders').textContent = data.statistics.total_orders || 0;
+                    document.getElementById('stat-open-orders').textContent = data.statistics.open_orders || 0;
+                    document.getElementById('stat-closed-orders').textContent = data.statistics.closed_orders || 0;
+                    document.getElementById('stat-expired-orders').textContent = data.statistics.expired_orders || 0;
+                }
+                
+                // 更新訊息
+                document.getElementById('messages-count').textContent = (data.messages || []).length;
+                document.getElementById('messages-data').textContent = JSON.stringify(data.messages, null, 2);
+                
+                // 更新訂單
+                document.getElementById('orders-count').textContent = (data.orders || []).length;
+                document.getElementById('orders-data').textContent = JSON.stringify(data.orders, null, 2);
+                
+                // 更新原始數據
+                document.getElementById('raw-data').textContent = JSON.stringify(data, null, 2);
+                
+                showStatus('數據已刷新');
+            } catch (error) {
+                showStatus('刷新失敗: ' + error.message, true);
+                console.error('Error:', error);
+            }
+        }
+        
+        async function clearData() {
+            if (!confirm('確定要清除所有數據嗎？此操作無法撤銷！')) {
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/trading/clear', { method: 'POST' });
+                const result = await response.json();
+                
+                if (result.status === 'ok') {
+                    showStatus('數據已清除');
+                    refreshData();
+                } else {
+                    showStatus('清除失敗: ' + result.error, true);
+                }
+            } catch (error) {
+                showStatus('清除失敗: ' + error.message, true);
+            }
+        }
+        
+        // 初始載入
+        refreshData();
+    </script>
+</body>
+</html>

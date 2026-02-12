@@ -1,0 +1,4102 @@
+{
+  "last_updated": "2026-02-12T13:32:06.907189+08:00",
+  "orders": {
+    "SPY_693.0p_20260211203909": {
+      "order_id": "SPY_693.0p_20260211203909",
+      "ticker": "SPY",
+      "option_type": "p",
+      "strike_price": 693.0,
+      "expiration": "2/10/26",
+      "entry_price": 76.0,
+      "entry_time": "2026-02-11T20:39:09.689413+08:00",
+      "exit_price": 0.81,
+      "exit_time": "2026-02-11T20:39:09.691416+08:00",
+      "pnl_percent": -98.9,
+      "status": "closed",
+      "messages_count": 0,
+      "notes": "JPM 平倉 all out @.81"
+    },
+    "SPY_693.0p_20260211204005": {
+      "order_id": "SPY_693.0p_20260211204005",
+      "ticker": "SPY",
+      "option_type": "p",
+      "strike_price": 693.0,
+      "expiration": "2/10/26",
+      "entry_price": 76.0,
+      "entry_time": "2026-02-11T20:40:05.086189+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "SPY_687.0c_20260211204005": {
+      "order_id": "SPY_687.0c_20260211204005",
+      "ticker": "SPY",
+      "option_type": "c",
+      "strike_price": 687.0,
+      "expiration": "2/6/26",
+      "entry_price": 1.17,
+      "entry_time": "2026-02-11T20:40:05.092190+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "QQQ_608.0p_20260211204005": {
+      "order_id": "QQQ_608.0p_20260211204005",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 608.0,
+      "expiration": "2/4/26",
+      "entry_price": 1.72,
+      "entry_time": "2026-02-11T20:40:05.102191+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:07.284231+08:00",
+      "pnl_percent": 178.0,
+      "status": "closed",
+      "messages_count": 0,
+      "notes": "止盈通知 PnL: +178.0%"
+    },
+    "QQQ_615.0p_20260211204005": {
+      "order_id": "QQQ_615.0p_20260211204005",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 615.0,
+      "expiration": "2/3/26",
+      "entry_price": 1.07,
+      "entry_time": "2026-02-11T20:40:05.104191+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:07.293232+08:00",
+      "pnl_percent": -50,
+      "status": "closed",
+      "messages_count": 0,
+      "notes": "止損通知"
+    },
+    "QQQ_623.0c_20260211204005": {
+      "order_id": "QQQ_623.0c_20260211204005",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 623.0,
+      "expiration": "2/2/26",
+      "entry_price": 1.24,
+      "entry_time": "2026-02-11T20:40:05.111188+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "QQQ_626.0p_20260211204005": {
+      "order_id": "QQQ_626.0p_20260211204005",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 626.0,
+      "expiration": "1/29/26",
+      "entry_price": 1.62,
+      "entry_time": "2026-02-11T20:40:05.121189+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "SPY_695.0p_20260211204005": {
+      "order_id": "SPY_695.0p_20260211204005",
+      "ticker": "SPY",
+      "option_type": "p",
+      "strike_price": 695.0,
+      "expiration": "1/13/26",
+      "entry_price": 78.0,
+      "entry_time": "2026-02-11T20:40:05.173191+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "SPY_693.0c_20260211204005": {
+      "order_id": "SPY_693.0c_20260211204005",
+      "ticker": "SPY",
+      "option_type": "c",
+      "strike_price": 693.0,
+      "expiration": "1/9/26",
+      "entry_price": 1.19,
+      "entry_time": "2026-02-11T20:40:05.189190+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "QQQ_613.0c_20260211204005": {
+      "order_id": "QQQ_613.0c_20260211204005",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 613.0,
+      "expiration": "1/21/26",
+      "entry_price": 95.0,
+      "entry_time": "2026-02-11T20:40:05.144191+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "JPM 買入開倉 SL $609.40"
+    },
+    "SPY_684.0c_20260211204005": {
+      "order_id": "SPY_684.0c_20260211204005",
+      "ticker": "SPY",
+      "option_type": "c",
+      "strike_price": 684.0,
+      "expiration": "1/20/26",
+      "entry_price": 1.06,
+      "entry_time": "2026-02-11T20:40:05.148189+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "QQQ_623.0p_20260211204005": {
+      "order_id": "QQQ_623.0p_20260211204005",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 623.0,
+      "expiration": "1/15/26",
+      "entry_price": 93.0,
+      "entry_time": "2026-02-11T20:40:05.164189+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "JPM 買入開倉 SL $625.80"
+    },
+    "SPY_694.0c_20260211204005": {
+      "order_id": "SPY_694.0c_20260211204005",
+      "ticker": "SPY",
+      "option_type": "c",
+      "strike_price": 694.0,
+      "expiration": "1/7/26",
+      "entry_price": 56.0,
+      "entry_time": "2026-02-11T20:40:05.194191+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-11T20:40:09.912608+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "QQQ_64.0c_20260211204006": {
+      "order_id": "QQQ_64.0c_20260211204006",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 64.0,
+      "expiration": "2/11",
+      "entry_price": 1.61,
+      "entry_time": "2026-02-11T20:40:06.118177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "SPY_715.0c_20260211204006": {
+      "order_id": "SPY_715.0c_20260211204006",
+      "ticker": "SPY",
+      "option_type": "c",
+      "strike_price": 715.0,
+      "expiration": "3/20",
+      "entry_price": 3.58,
+      "entry_time": "2026-02-11T20:40:06.121177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "SPX_6960.0c_20260211204006": {
+      "order_id": "SPX_6960.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6960.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 4.0,
+      "entry_time": "2026-02-11T20:40:06.133179+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "SPX_6965.0c_20260211204006": {
+      "order_id": "SPX_6965.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6965.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 2.55,
+      "entry_time": "2026-02-11T20:40:06.135178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "QQQ_614.0c_20260211204006": {
+      "order_id": "QQQ_614.0c_20260211204006",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 614.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 0.57,
+      "entry_time": "2026-02-11T20:40:06.137178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "SPX_6970.0c_20260211204006": {
+      "order_id": "SPX_6970.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6970.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.1,
+      "entry_time": "2026-02-11T20:40:06.190177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "SPX_6980.0c_20260211204006": {
+      "order_id": "SPX_6980.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6980.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 2.1,
+      "entry_time": "2026-02-11T20:40:06.141178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "QQQ_615.0c_20260211204006": {
+      "order_id": "QQQ_615.0c_20260211204006",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 615.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 0.81,
+      "entry_time": "2026-02-11T20:40:06.149177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "SPX_6995.0c_20260211204006": {
+      "order_id": "SPX_6995.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6995.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.2,
+      "entry_time": "2026-02-11T20:40:06.151178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "QQQ_616.0c_20260211204006": {
+      "order_id": "QQQ_616.0c_20260211204006",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 616.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 0.86,
+      "entry_time": "2026-02-11T20:40:06.153177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "SPX_7005.0c_20260211204006": {
+      "order_id": "SPX_7005.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 7005.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 0.95,
+      "entry_time": "2026-02-11T20:40:06.155178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "AAPL_275.0c_20260211204006": {
+      "order_id": "AAPL_275.0c_20260211204006",
+      "ticker": "AAPL",
+      "option_type": "c",
+      "strike_price": 275.0,
+      "expiration": "2/11",
+      "entry_price": 1.39,
+      "entry_time": "2026-02-11T20:40:06.159177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "AMD_220.0c_20260211204006": {
+      "order_id": "AMD_220.0c_20260211204006",
+      "ticker": "AMD",
+      "option_type": "c",
+      "strike_price": 220.0,
+      "expiration": "2/13",
+      "entry_price": 3.6,
+      "entry_time": "2026-02-11T20:40:06.169178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "NVDA_190.0c_20260211204006": {
+      "order_id": "NVDA_190.0c_20260211204006",
+      "ticker": "NVDA",
+      "option_type": "c",
+      "strike_price": 190.0,
+      "expiration": "2/11",
+      "entry_price": 1.4,
+      "entry_time": "2026-02-11T20:40:06.171177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "SPX_6990.0c_20260211204006": {
+      "order_id": "SPX_6990.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6990.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 3.65,
+      "entry_time": "2026-02-11T20:40:06.173177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "SPX_7000.0c_20260211204006": {
+      "order_id": "SPX_7000.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 7000.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.7,
+      "entry_time": "2026-02-11T20:40:06.176178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "TSLA_430.0c_20260211204006": {
+      "order_id": "TSLA_430.0c_20260211204006",
+      "ticker": "TSLA",
+      "option_type": "c",
+      "strike_price": 430.0,
+      "expiration": "2/11",
+      "entry_price": 1.69,
+      "entry_time": "2026-02-11T20:40:06.194178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS) | 🎰 彩票"
+    },
+    "NVDA_195.0c_20260211204006": {
+      "order_id": "NVDA_195.0c_20260211204006",
+      "ticker": "NVDA",
+      "option_type": "c",
+      "strike_price": 195.0,
+      "expiration": "2/11",
+      "entry_price": 0.87,
+      "entry_time": "2026-02-11T20:40:06.196177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS) | 🎰 彩票"
+    },
+    "INTC_54.0c_20260211204006": {
+      "order_id": "INTC_54.0c_20260211204006",
+      "ticker": "INTC",
+      "option_type": "c",
+      "strike_price": 54.0,
+      "expiration": "2/27",
+      "entry_price": 1.7,
+      "entry_time": "2026-02-11T20:40:06.200181+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "IBIT_41.0c_20260211204006": {
+      "order_id": "IBIT_41.0c_20260211204006",
+      "ticker": "IBIT",
+      "option_type": "c",
+      "strike_price": 41.0,
+      "expiration": "3/20",
+      "entry_price": 2.36,
+      "entry_time": "2026-02-11T20:40:06.202178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "MSTR_160.0c_20260211204006": {
+      "order_id": "MSTR_160.0c_20260211204006",
+      "ticker": "MSTR",
+      "option_type": "c",
+      "strike_price": 160.0,
+      "expiration": "3/20",
+      "entry_price": 7.0,
+      "entry_time": "2026-02-11T20:40:06.204177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "NVDA_215.0c_20260211204006": {
+      "order_id": "NVDA_215.0c_20260211204006",
+      "ticker": "NVDA",
+      "option_type": "c",
+      "strike_price": 215.0,
+      "expiration": "3/13",
+      "entry_price": 2.83,
+      "entry_time": "2026-02-11T20:40:06.210178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "PLTR_155.0c_20260211204006": {
+      "order_id": "PLTR_155.0c_20260211204006",
+      "ticker": "PLTR",
+      "option_type": "c",
+      "strike_price": 155.0,
+      "expiration": "3/13",
+      "entry_price": 5.0,
+      "entry_time": "2026-02-11T20:40:06.215178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "QQQ_630.0c_20260211204006": {
+      "order_id": "QQQ_630.0c_20260211204006",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 630.0,
+      "expiration": "2/20",
+      "entry_price": 2.11,
+      "entry_time": "2026-02-11T20:40:06.217178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "SPX_6935.0c_20260211204006": {
+      "order_id": "SPX_6935.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6935.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 0.9,
+      "entry_time": "2026-02-11T20:40:06.266177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "SPX_6940.0c_20260211204006": {
+      "order_id": "SPX_6940.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6940.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 0.55,
+      "entry_time": "2026-02-11T20:40:06.284177+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "SPX_6930.0c_20260211204006": {
+      "order_id": "SPX_6930.0c_20260211204006",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6930.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.05,
+      "entry_time": "2026-02-11T20:40:06.298178+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "QQQ_613.0p_20260211204007": {
+      "order_id": "QQQ_613.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 613.0,
+      "expiration": "02/10",
+      "entry_price": 0.69,
+      "entry_time": "2026-02-11T20:40:07.290231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_618.0c_20260211204007": {
+      "order_id": "QQQ_618.0c_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 618.0,
+      "expiration": "02/10",
+      "entry_price": 0.9,
+      "entry_time": "2026-02-11T20:40:07.296232+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_612.0c_20260211204007": {
+      "order_id": "QQQ_612.0c_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 612.0,
+      "expiration": "02/09",
+      "entry_price": 0.84,
+      "entry_time": "2026-02-11T20:40:07.325230+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_608.0c_20260211204007": {
+      "order_id": "QQQ_608.0c_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 608.0,
+      "expiration": "02/06",
+      "entry_price": 0.95,
+      "entry_time": "2026-02-11T20:40:07.336234+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_595.0p_20260211204007": {
+      "order_id": "QQQ_595.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 595.0,
+      "expiration": "02/05",
+      "entry_price": 1.0,
+      "entry_time": "2026-02-11T20:40:07.354231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "AAPL_280.0c_20260211204007": {
+      "order_id": "AAPL_280.0c_20260211204007",
+      "ticker": "AAPL",
+      "option_type": "c",
+      "strike_price": 280.0,
+      "expiration": "02/05",
+      "entry_price": 0.73,
+      "entry_time": "2026-02-11T20:40:07.359233+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_590.0p_20260211204007": {
+      "order_id": "QQQ_590.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 590.0,
+      "expiration": "02/05",
+      "entry_price": 1.0,
+      "entry_time": "2026-02-11T20:40:07.364233+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_588.0p_20260211204007": {
+      "order_id": "QQQ_588.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 588.0,
+      "expiration": "02/05",
+      "entry_price": 1.0,
+      "entry_time": "2026-02-11T20:40:07.369231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "MSFT_430.0c_20260211204007": {
+      "order_id": "MSFT_430.0c_20260211204007",
+      "ticker": "MSFT",
+      "option_type": "c",
+      "strike_price": 430.0,
+      "expiration": "02/06",
+      "entry_price": 0.8,
+      "entry_time": "2026-02-11T20:40:07.379230+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_620.0c_20260211204007": {
+      "order_id": "QQQ_620.0c_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 620.0,
+      "expiration": "02/04",
+      "entry_price": 0.8,
+      "entry_time": "2026-02-11T20:40:07.381231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_622.0p_20260211204007": {
+      "order_id": "QQQ_622.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 622.0,
+      "expiration": "02/03",
+      "entry_price": 0.74,
+      "entry_time": "2026-02-11T20:40:07.405231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_625.0p_20260211204007": {
+      "order_id": "QQQ_625.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 625.0,
+      "expiration": "02/02",
+      "entry_price": 0.9,
+      "entry_time": "2026-02-11T20:40:07.410229+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_620.0p_20260211204007": {
+      "order_id": "QQQ_620.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 620.0,
+      "expiration": "01/30",
+      "entry_price": 0.73,
+      "entry_time": "2026-02-11T20:40:07.421230+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_630.0c_20260211204007": {
+      "order_id": "QQQ_630.0c_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 630.0,
+      "expiration": "01/27",
+      "entry_price": 0.61,
+      "entry_time": "2026-02-11T20:40:07.483231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_623.0p_20260211204007": {
+      "order_id": "QQQ_623.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 623.0,
+      "expiration": "01/29",
+      "entry_price": 0.8,
+      "entry_time": "2026-02-11T20:40:07.433231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_619.0p_20260211204007": {
+      "order_id": "QQQ_619.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 619.0,
+      "expiration": "01/29",
+      "entry_price": 0.8,
+      "entry_time": "2026-02-11T20:40:07.439231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_629.0p_20260211204007": {
+      "order_id": "QQQ_629.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 629.0,
+      "expiration": "01/28",
+      "entry_price": 0.82,
+      "entry_time": "2026-02-11T20:40:07.456231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_626.0c_20260211204007": {
+      "order_id": "QQQ_626.0c_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 626.0,
+      "expiration": "01/26",
+      "entry_price": 0.85,
+      "entry_time": "2026-02-11T20:40:07.498230+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_615.0p_20260211204007": {
+      "order_id": "QQQ_615.0p_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "p",
+      "strike_price": 615.0,
+      "expiration": "01/22",
+      "entry_price": 0.7,
+      "entry_time": "2026-02-11T20:40:07.525231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_613.0c_20260211204007": {
+      "order_id": "QQQ_613.0c_20260211204007",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 613.0,
+      "expiration": "01/20",
+      "entry_price": 0.82,
+      "entry_time": "2026-02-11T20:40:07.570231+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_618.0c_20260211224431": {
+      "order_id": "QQQ_618.0c_20260211224431",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 618.0,
+      "expiration": "2/11/26",
+      "entry_price": 75.0,
+      "entry_time": "2026-02-11T22:44:31.040549+08:00",
+      "exit_price": null,
+      "exit_time": "2026-02-12T13:31:39.204375+08:00",
+      "pnl_percent": -100,
+      "status": "expired",
+      "messages_count": 0,
+      "notes": "過期自動平倉 (美國市場收盤)"
+    },
+    "QQQ_615.0c_20260211230016": {
+      "order_id": "QQQ_615.0c_20260211230016",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 615.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.23,
+      "entry_time": "2026-02-11T23:00:16.249379+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "SPX_6995.0c_20260211231055": {
+      "order_id": "SPX_6995.0c_20260211231055",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6995.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.55,
+      "entry_time": "2026-02-11T23:10:55.955993+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "QQQ_613.0c_20260211231136": {
+      "order_id": "QQQ_613.0c_20260211231136",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 613.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.41,
+      "entry_time": "2026-02-11T23:11:36.086516+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "SPX_6980.0c_20260211231504": {
+      "order_id": "SPX_6980.0c_20260211231504",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6980.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 2.7,
+      "entry_time": "2026-02-11T23:15:04.953384+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "QQQ_612.0c_20260211231851": {
+      "order_id": "QQQ_612.0c_20260211231851",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 612.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.23,
+      "entry_time": "2026-02-11T23:18:51.605029+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "QQQ_610.0c_20260211232157": {
+      "order_id": "QQQ_610.0c_20260211232157",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 610.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.68,
+      "entry_time": "2026-02-11T23:21:57.281126+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "AAPL_280.0c_20260211232608": {
+      "order_id": "AAPL_280.0c_20260211232608",
+      "ticker": "AAPL",
+      "option_type": "c",
+      "strike_price": 280.0,
+      "expiration": "02/13",
+      "entry_price": 1.0,
+      "entry_time": "2026-02-11T23:26:08.494009+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (BTO)"
+    },
+    "SPX_6960.0c_20260211232842": {
+      "order_id": "SPX_6960.0c_20260211232842",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6960.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 4.4,
+      "entry_time": "2026-02-11T23:28:42.113404+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "PLTR_138.0c_20260212001339": {
+      "order_id": "PLTR_138.0c_20260212001339",
+      "ticker": "PLTR",
+      "option_type": "c",
+      "strike_price": 138.0,
+      "expiration": "2/13",
+      "entry_price": 1.47,
+      "entry_time": "2026-02-12T00:13:39.161405+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "HOOD_78.0c_20260212002003": {
+      "order_id": "HOOD_78.0c_20260212002003",
+      "ticker": "HOOD",
+      "option_type": "c",
+      "strike_price": 78.0,
+      "expiration": "2/13",
+      "entry_price": 1.16,
+      "entry_time": "2026-02-12T00:20:03.941501+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "SNDK_620.0c_20260212002333": {
+      "order_id": "SNDK_620.0c_20260212002333",
+      "ticker": "SNDK",
+      "option_type": "c",
+      "strike_price": 620.0,
+      "expiration": "2/13",
+      "entry_price": 14.9,
+      "entry_time": "2026-02-12T00:23:33.368326+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "AAPL_280.0c_20260212003847": {
+      "order_id": "AAPL_280.0c_20260212003847",
+      "ticker": "AAPL",
+      "option_type": "c",
+      "strike_price": 280.0,
+      "expiration": "2/13",
+      "entry_price": 1.73,
+      "entry_time": "2026-02-12T00:38:47.603588+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "SPX_6975.0c_20260212005117": {
+      "order_id": "SPX_6975.0c_20260212005117",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6975.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.65,
+      "entry_time": "2026-02-12T00:51:17.675470+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "SPX_6970.0c_20260212010108": {
+      "order_id": "SPX_6970.0c_20260212010108",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6970.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.7,
+      "entry_time": "2026-02-12T01:01:08.982023+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 0,
+      "notes": "0dte - 今天到期"
+    },
+    "NVDA_190.0c_20260212133206": {
+      "order_id": "NVDA_190.0c_20260212133206",
+      "ticker": "NVDA",
+      "option_type": "c",
+      "strike_price": 190.0,
+      "expiration": "2/1",
+      "entry_price": 1.0,
+      "entry_time": "2026-02-12T13:32:06.818671+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 1,
+      "notes": "買入開倉 (BTO)"
+    },
+    "QQQ_618.0c_20260212133206": {
+      "order_id": "QQQ_618.0c_20260212133206",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 618.0,
+      "expiration": "2/12",
+      "entry_price": 0.57,
+      "entry_time": "2026-02-12T13:32:06.821672+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 1,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "SPX_6950.0c_20260212133206": {
+      "order_id": "SPX_6950.0c_20260212133206",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6950.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 1.15,
+      "entry_time": "2026-02-12T13:32:06.855189+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 1,
+      "notes": "0dte - 今天到期 | 🎰 彩票"
+    },
+    "SPX_6955.0c_20260212133206": {
+      "order_id": "SPX_6955.0c_20260212133206",
+      "ticker": "SPX",
+      "option_type": "c",
+      "strike_price": 6955.0,
+      "expiration": "0dte (今天到期)",
+      "entry_price": 4.45,
+      "entry_time": "2026-02-12T13:32:06.875189+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 1,
+      "notes": "0dte - 今天到期"
+    },
+    "QQQ_623.0c_20260212133206": {
+      "order_id": "QQQ_623.0c_20260212133206",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 623.0,
+      "expiration": "2/17",
+      "entry_price": 0.87,
+      "entry_time": "2026-02-12T13:32:06.884189+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 1,
+      "notes": "買入開倉 (OCULUS)"
+    },
+    "QQQ_616.0c_20260212133206": {
+      "order_id": "QQQ_616.0c_20260212133206",
+      "ticker": "QQQ",
+      "option_type": "c",
+      "strike_price": 616.0,
+      "expiration": "2/12",
+      "entry_price": 1.23,
+      "entry_time": "2026-02-12T13:32:06.888189+08:00",
+      "exit_price": null,
+      "exit_time": null,
+      "pnl_percent": null,
+      "status": "open",
+      "messages_count": 1,
+      "notes": "買入開倉 (OCULUS)"
+    }
+  },
+  "messages": [
+    {
+      "id": "t1",
+      "channel_id": "jpm",
+      "content": "Jpm",
+      "timestamp": "now",
+      "has_order": true,
+      "order_id": "SPY_693.0p_20260211203909"
+    },
+    {
+      "id": "t2",
+      "channel_id": "jpm",
+      "content": "Jpm",
+      "timestamp": "now",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "t3",
+      "channel_id": "jpm",
+      "content": "Jpm",
+      "timestamp": "now",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "t4",
+      "channel_id": "jpm",
+      "content": "Jpm",
+      "timestamp": "now",
+      "has_order": true,
+      "order_id": "SPY_693.0p_20260211203909"
+    },
+    {
+      "id": "1470800693668483175",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Unbounded\n\nJpmInvestments：\n    无界",
+      "timestamp": "2026-02-10T15:16:51.526000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470794778181632011",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nClose\nSPY 02/10 693P (all out @.81) 🔥\n",
+      "timestamp": "2026-02-10T14:53:21.164000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470791005308719149",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/10 693P @1.22 **(+60%)** 🔥\n",
+      "timestamp": "2026-02-10T14:38:21.641000+00:00",
+      "has_order": true,
+      "order_id": "SPY_693.0p_20260211204005"
+    },
+    {
+      "id": "1470790815700746447",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/10 693P @1.11 **(+45%)**\n",
+      "timestamp": "2026-02-10T14:37:36.435000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470790731642835133",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/10 693P @1.03 **(+35%)**\n",
+      "timestamp": "2026-02-10T14:37:16.394000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470790633236205568",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/10 693P @.95 **(+25%)**\n",
+      "timestamp": "2026-02-10T14:36:52.932000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470790469784043622",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/10 693P @.88 **(+15%)**\n",
+      "timestamp": "2026-02-10T14:36:13.962000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470790143492493343",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nSPY 02/10 693P @.76 (Light entry)\n",
+      "timestamp": "2026-02-10T14:34:56.168000+00:00",
+      "has_order": true,
+      "order_id": "SPY_693.0p_20260211204005"
+    },
+    {
+      "id": "1470789579664523408",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Bounded\n\nJpmInvestments：\n    有界",
+      "timestamp": "2026-02-10T14:32:41.741000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470199000450732227",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Unbounded\n\nJpmInvestments：\n    无界",
+      "timestamp": "2026-02-08T23:25:56.684000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469346663851098246",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nSL at $683.45 on remaining position\n",
+      "timestamp": "2026-02-06T14:59:03.803000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469345307291684904",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/06 687C @1.70 **(+45%)**\n",
+      "timestamp": "2026-02-06T14:53:40.374000+00:00",
+      "has_order": true,
+      "order_id": "SPY_687.0c_20260211204005"
+    },
+    {
+      "id": "1469343293082173605",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/06 687C @1.53 **(+30%)**\n",
+      "timestamp": "2026-02-06T14:45:40.149000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469341491490062380",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nSPY 02/06 687C @1.35 **(+15%)**\n",
+      "timestamp": "2026-02-06T14:38:30.616000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469340447783653449",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nSPY 02/06 687C @1.17 (Light entry)\n",
+      "timestamp": "2026-02-06T14:34:21.777000+00:00",
+      "has_order": true,
+      "order_id": "SPY_687.0c_20260211204005"
+    },
+    {
+      "id": "1468663674011914403",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @6.88 **(+300%)** 🩸💰\n",
+      "timestamp": "2026-02-04T17:45:06.336000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_608.0p_20260211204005"
+    },
+    {
+      "id": "1468660561167253517",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @5.16 **(+200%)** 🩸💰\n",
+      "timestamp": "2026-02-04T17:32:44.176000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468648877740658798",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @4.30 **(+150%)** 🩸💰\n",
+      "timestamp": "2026-02-04T16:46:18.630000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468647568987656265",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @3.44 **(+100%)** 🔥\n",
+      "timestamp": "2026-02-04T16:41:06.599000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468622739723128933",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @3.01 **(+75%)** 🔥\n",
+      "timestamp": "2026-02-04T15:02:26.841000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468622428073889832",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @2.58 **(+50%)**\n",
+      "timestamp": "2026-02-04T15:01:12.538000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468622219587616819",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @2.41 **(+40%)**\n",
+      "timestamp": "2026-02-04T15:00:22.831000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468621944231563470",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @2.23 **(+30%)**\n",
+      "timestamp": "2026-02-04T14:59:17.181000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468621792355684588",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/04 608P @2.07 **(+20%)**\n",
+      "timestamp": "2026-02-04T14:58:40.971000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468621463644016750",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nQQQ 02/04 608P @1.72 (SL $613.40)\n",
+      "timestamp": "2026-02-04T14:57:22.600000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_608.0p_20260211204005"
+    },
+    {
+      "id": "1468271670174158971",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nClose\nQQQ 02/03 615P @.85 (Cutting it)\n",
+      "timestamp": "2026-02-03T15:47:25.338000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468268794375045394",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nQQQ 02/03 615P @1.07 (Light entry)\n",
+      "timestamp": "2026-02-03T15:35:59.694000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_615.0p_20260211204005"
+    },
+    {
+      "id": "1467904288071352472",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/02 623C @4.34 **(+250%)** 🚀\n",
+      "timestamp": "2026-02-02T15:27:34.619000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0c_20260211204005"
+    },
+    {
+      "id": "1467895142018191573",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/02 623C @3.10 **(+150%)** 🚀\n",
+      "timestamp": "2026-02-02T14:51:14.030000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1467894964179435530",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/02 623C @2.48 **(+100%)** 🚀\n",
+      "timestamp": "2026-02-02T14:50:31.630000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1467891742765486237",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/02 623C @2.17 **(+75%)**\n",
+      "timestamp": "2026-02-02T14:37:43.585000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1467891633998532608",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/02 623C @2.05 **(+65%)**\n",
+      "timestamp": "2026-02-02T14:37:17.653000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1467891532572135537",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/02 623C @1.86 **(+50%)**\n",
+      "timestamp": "2026-02-02T14:36:53.471000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1467891242921758781",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nQQQ 02/02 623C @1.24 (Light entry)\n",
+      "timestamp": "2026-02-02T14:35:44.413000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0c_20260211204005"
+    },
+    {
+      "id": "1466460796736372912",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @7.29 **(+350%)** 🩸💰\n",
+      "timestamp": "2026-01-29T15:51:39.466000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_626.0p_20260211204005"
+    },
+    {
+      "id": "1466458304900235440",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @5.67 **(+250%)** 🩸💰\n",
+      "timestamp": "2026-01-29T15:41:45.366000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466456174462373968",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @4.86 **(+200%)** 🩸💰\n",
+      "timestamp": "2026-01-29T15:33:17.430000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466451494680395928",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @4.05 **(+150%)** 🔥\n",
+      "timestamp": "2026-01-29T15:14:41.683000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466448215317545063",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @3.24 **(+100%)** 🔥\n",
+      "timestamp": "2026-01-29T15:01:39.822000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466447914292482142",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @2.43 **(+50%)**\n",
+      "timestamp": "2026-01-29T15:00:28.052000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466444548371775488",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @2.10 **(+30%)**\n",
+      "timestamp": "2026-01-29T14:47:05.554000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466444136847773768",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/29 626P @1.95 **(+20%)**\n",
+      "timestamp": "2026-01-29T14:45:27.439000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466443912028885139",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nQQQ 01/29 626P @1.62 (SL $630.80)\n",
+      "timestamp": "2026-01-29T14:44:33.838000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_626.0p_20260211204005"
+    },
+    {
+      "id": "1466081807400177898",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nClose\nSPY 01/28 695P @.81 (stopping out)\n",
+      "timestamp": "2026-01-28T14:45:41.367000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466079598511919238",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nSPY 01/28 695P @1.03 \n> High risk / FOMC @ 2:00pm EST\n",
+      "timestamp": "2026-01-28T14:36:54.727000+00:00",
+      "has_order": true,
+      "order_id": "SPY_695.0p_20260211204005"
+    },
+    {
+      "id": "1466065879866413139",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Bounded\n\nJpmInvestments：\n    有界",
+      "timestamp": "2026-01-28T13:42:23.947000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465752360998670378",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Unbounded\n\nJpmInvestments：\n    无界",
+      "timestamp": "2026-01-27T16:56:35.224000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465740917452574981",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nClose\nSPY 01/27 695P @.36 (Cutting it)\n",
+      "timestamp": "2026-01-27T16:11:06.870000+00:00",
+      "has_order": true,
+      "order_id": "SPY_695.0p_20260211204005"
+    },
+    {
+      "id": "1465735842092810405",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nSPY 01/27 695P @.41 (Light entry)\n",
+      "timestamp": "2026-01-27T15:50:56.810000+00:00",
+      "has_order": true,
+      "order_id": "SPY_695.0p_20260211204005"
+    },
+    {
+      "id": "1465734216334573853",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Bounded\n\nJpmInvestments：\n    有界",
+      "timestamp": "2026-01-27T15:44:29.199000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465500173613404331",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Unbounded\n\nJpmInvestments：\n    无界",
+      "timestamp": "2026-01-27T00:14:29.066000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465360596269797479",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\n摩根大通投资：\n    @JPM\nClose\nSPY 01/26 693C @.71 (chop fest)\n",
+      "timestamp": "2026-01-26T14:59:51.234000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465357080125898805",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nSPY 01/26 693C @.74 (light entry)\n",
+      "timestamp": "2026-01-26T14:45:52.920000+00:00",
+      "has_order": true,
+      "order_id": "SPY_693.0c_20260211204005"
+    },
+    {
+      "id": "1465354337101283561",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Bounded\n\nJpmInvestments：\n    有界",
+      "timestamp": "2026-01-26T14:34:58.932000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463888976266924072",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Unbounded\n\nJpmInvestments：\n    无界",
+      "timestamp": "2026-01-22T13:32:09.684000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463561295667134647",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/21 613C @3.35 **(+250%)** 🔥🚀\n",
+      "timestamp": "2026-01-21T15:50:04.541000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_613.0c_20260211204005"
+    },
+    {
+      "id": "1463548633050775604",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/21 613C @1.67 **(+75%)**\n",
+      "timestamp": "2026-01-21T14:59:45.538000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463547902231056408",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/21 613C @1.38 **(+45%)**\n",
+      "timestamp": "2026-01-21T14:56:51.297000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463547076934766604",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/21 613C @1.29 **(+35%)**\n",
+      "timestamp": "2026-01-21T14:53:34.531000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463546932072022047",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/21 613C @1.19 **(+25%)**\n",
+      "timestamp": "2026-01-21T14:52:59.993000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463546794851045559",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 01/21 613C @1.10 **(+15%)**\n",
+      "timestamp": "2026-01-21T14:52:27.277000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463546709044101284",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nQQQ 01/21 613C @.95 (SL $609.40)\n",
+      "timestamp": "2026-01-21T14:52:06.819000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_613.0c_20260211204005"
+    },
+    {
+      "id": "1463188705454981173",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nClose\nSPY 01/20 684C @.75 (All out)\n",
+      "timestamp": "2026-01-20T15:09:32.112000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463188100518776957",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/20 684C @1.22 **(+15%)**\n",
+      "timestamp": "2026-01-20T15:07:07.884000+00:00",
+      "has_order": true,
+      "order_id": "SPY_684.0c_20260211204005"
+    },
+    {
+      "id": "1463186946837975040",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nOpen\nSPY 01/20 684C @1.06 (Light entry)\n",
+      "timestamp": "2026-01-20T15:02:32.825000+00:00",
+      "has_order": true,
+      "order_id": "SPY_684.0c_20260211204005"
+    },
+    {
+      "id": "1461747999452565777",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @4.81 **(+550%)** 🩸💰\n",
+      "timestamp": "2026-01-16T15:44:41.034000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0p_20260211204005"
+    },
+    {
+      "id": "1461737166966096167",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @2.22 **(+200%)** 🩸💰\n",
+      "timestamp": "2026-01-16T15:01:38.368000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461736723842076839",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @1.85 **(+150%)** 🔥\n",
+      "timestamp": "2026-01-16T14:59:52.719000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461735805503410216",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @1.48 **(+100%)** 🔥\n",
+      "timestamp": "2026-01-16T14:56:13.770000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461735615459623060",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @1.30 **(+75%)** 🔥\n",
+      "timestamp": "2026-01-16T14:55:28.460000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461735235761868911",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @1.08 **(+45%)**\n",
+      "timestamp": "2026-01-16T14:53:57.933000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461734993771499620",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @1.00 **(+35%)**\n",
+      "timestamp": "2026-01-16T14:53:00.238000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461734109020815587",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @.93 **(+25%)**\n",
+      "timestamp": "2026-01-16T14:49:29.297000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461733893639245907",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nQQQ 01/16 623P @.86 **(+15%)**\n",
+      "timestamp": "2026-01-16T14:48:37.946000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1461733707349098744",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nOpen\nQQQ 01/16 623P @.74 (SL $625.50)\n",
+      "timestamp": "2026-01-16T14:47:53.531000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0p_20260211204005"
+    },
+    {
+      "id": "1461373048077680794",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nClose\nQQQ 01/15 623P @.62 (Stopped)\n",
+      "timestamp": "2026-01-15T14:54:45.660000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0p_20260211204005"
+    },
+    {
+      "id": "1461372329224306804",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nOpen\nQQQ 01/15 623P @.93 (SL $625.80)\n",
+      "timestamp": "2026-01-15T14:51:54.272000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0p_20260211204005"
+    },
+    {
+      "id": "1461368250603536640",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Bounded",
+      "timestamp": "2026-01-15T14:35:41.853000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460789597410951345",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Unbounded",
+      "timestamp": "2026-01-14T00:16:20.181000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460663120518316082",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/13 695P @2.19 **(+180%)** 🔥\n",
+      "timestamp": "2026-01-13T15:53:45.740000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460646740444188923",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/13 695P @1.37 **(+75%)** 🔥\n",
+      "timestamp": "2026-01-13T14:48:40.426000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460645726731108404",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/13 695P @1.10 **(+40%)**\n",
+      "timestamp": "2026-01-13T14:44:38.738000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460644196099817631",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/13 695P @.90 **(+15%)**\n",
+      "timestamp": "2026-01-13T14:38:33.807000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460643956709658821",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nOpen\nSPY 01/13 695P @.78 (SL $696.85)\n",
+      "timestamp": "2026-01-13T14:37:36.732000+00:00",
+      "has_order": true,
+      "order_id": "SPY_695.0p_20260211204005"
+    },
+    {
+      "id": "1460342556146794627",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @2.16 **(+200%)** 🚀\n",
+      "timestamp": "2026-01-12T18:39:57.238000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460307501625901336",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @1.80 **(+150%)** 🚀\n",
+      "timestamp": "2026-01-12T16:20:39.589000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460286521646252149",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @1.44 **(+100%)** 🚀\n",
+      "timestamp": "2026-01-12T14:57:17.572000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460285305792762040",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @1.26 **(+75%)** 🔥🔥\n",
+      "timestamp": "2026-01-12T14:52:27.690000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460282616434524337",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @1.08 **(+50%)**\n",
+      "timestamp": "2026-01-12T14:41:46.497000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460282216281014352",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @1.01 **(+40%)**\n",
+      "timestamp": "2026-01-12T14:40:11.093000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460281916442804266",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @.94 **(+30%)**\n",
+      "timestamp": "2026-01-12T14:38:59.606000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460281746674286693",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/12 693C @.87 **(+20%)**\n",
+      "timestamp": "2026-01-12T14:38:19.130000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1460281272617275515",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nOpen\nSPY 01/12 693C @.72 (SL $690.95)\n",
+      "timestamp": "2026-01-12T14:36:26.106000+00:00",
+      "has_order": true,
+      "order_id": "SPY_693.0c_20260211204005"
+    },
+    {
+      "id": "1459197237979648002",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nClose\nSPY 01/09 693C @.87 (Stopping out)\n",
+      "timestamp": "2026-01-09T14:48:52.108000+00:00",
+      "has_order": true,
+      "order_id": "SPY_693.0c_20260211204005"
+    },
+    {
+      "id": "1459195954639929346",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nOpen\nSPY 01/09 693C @1.19 (SL $690.95)\n",
+      "timestamp": "2026-01-09T14:43:46.136000+00:00",
+      "has_order": true,
+      "order_id": "SPY_693.0c_20260211204005"
+    },
+    {
+      "id": "1459180495047889082",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Bounded",
+      "timestamp": "2026-01-09T13:42:20.282000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1458623796813627442",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Unbounded",
+      "timestamp": "2026-01-08T00:50:13.080000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1458510024245776506",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nClose\nAll out of SPY @ BE\n",
+      "timestamp": "2026-01-07T17:18:07.586000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1458507491745992882",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/07 694C @.56 **(+40%)**\n",
+      "timestamp": "2026-01-07T17:08:03.791000+00:00",
+      "has_order": true,
+      "order_id": "SPY_694.0c_20260211204005"
+    },
+    {
+      "id": "1458507128061956328",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\nUpdate\nSPY 01/07 694C @.52 **(+30%)**\n",
+      "timestamp": "2026-01-07T17:06:37.082000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470887183622602915",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 64C\n> Expiry 2/11\n> Entry: 1.61\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 64C\n> 到期日: 2/11\n> 入场价: 1.61\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T21:00:32.338000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_64.0c_20260211204006"
+    },
+    {
+      "id": "1470884660396687373",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone it either starts now or we skip to 688 first \n\nI really think we are gonna go to 700 \n\nWe already knew they may pause it here 696 but that’s fine , these days will be over soon , all these months spy here 690 \n\nI’ve seen this same exact thing happen at 400 500 600 and now 700 …\n\n@everyone 现在要么开始，要么我们先跳到688\n\n我真的认为我们会到700\n\n我们已经知道他们可能会在696暂停，但没关系，这些日子很快就会结束，这几个月在690这里窥探\n\n我见过在400、500、600和现在700发生完全相同的事情……",
+      "timestamp": "2026-02-10T20:50:30.754000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470884133063491666",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPY\n> Strike: 715C\n> Expiry 3/20\n> Entry: 3.58\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPY\n> 行权价: 715C\n> 到期日 3/20\n> 入场: 3.58\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T20:48:25.028000+00:00",
+      "has_order": true,
+      "order_id": "SPY_715.0c_20260211204006"
+    },
+    {
+      "id": "1470883826275319899",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone  rough day for longterm swings , we caught a few shorterm great trades today , some losses too \n\nNot a good day \n\nHopefully better days to come\n\n@everyone 今天对于长期波动来说是个艰难的一天，我们今天抓住了一些短期的好交易，也有一些亏损。\n\n今天不是个好日子。\n\n希望未来会有更好的日子。",
+      "timestamp": "2026-02-10T20:47:11.884000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470864989601534114",
+      "channel_id": "1459878042955677869",
+      "content": "Soon breakout day comes\n\n很快就要到突破日了",
+      "timestamp": "2026-02-10T19:32:20.871000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470864969720532994",
+      "channel_id": "1459878042955677869",
+      "content": "Slowly grinding up\n\n慢慢地磨上去",
+      "timestamp": "2026-02-10T19:32:16.131000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470864953874583886",
+      "channel_id": "1459878042955677869",
+      "content": "That would put spy green again another day\n\n那将使间谍绿再次延续一天",
+      "timestamp": "2026-02-10T19:32:12.353000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470864884391612551",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone we may not see 697 target again today but we can see 695 that would be good enough\n\n@everyone 我们今天可能看不到697目标，但我们可以看到695，这就足够了。",
+      "timestamp": "2026-02-10T19:31:55.787000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470864738698395931",
+      "channel_id": "1459878042955677869",
+      "content": "3.70 from 2.55\n\n3.70 从 2.55",
+      "timestamp": "2026-02-10T19:31:21.051000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470864685375950858",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone now 6.10 from 4.00\n\n@everyone 现在 6.10 从 4.00",
+      "timestamp": "2026-02-10T19:31:08.338000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470863931148079219",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6960C\n> Expiry 0dte\n> Entry: 4.00\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6960C\n> 到期日: 0dte\n> 入场: 4.00\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T19:28:08.516000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6960.0c_20260211204006"
+    },
+    {
+      "id": "1470862950737776725",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6965C\n> Expiry 0dte\n> Entry: 2.55\n\nLotto\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6965C\n> 到期日: 0dte\n> 入场: 2.55\n\n彩票\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T19:24:14.768000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6965.0c_20260211204006"
+    },
+    {
+      "id": "1470851088772104193",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 614C\n> Expiry 0dte\n> Entry: .57\n\nLotto\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 614C\n> 到期日: 0dte\n> 入场: .57\n\n彩票\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T18:37:06.655000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_614.0c_20260211204006"
+    },
+    {
+      "id": "1470846152063713334",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6970C\n> Expiry 0dte\n> Entry: 4.00\n\nLotto\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6970C\n> 到期日: 0天到期\n> 入场: 4.00\n\n彩票\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T18:17:29.652000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6970.0c_20260211204006"
+    },
+    {
+      "id": "1470844788214337559",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6980C\n> Expiry 0dte\n> Entry: 2.10\n\nLotto\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6980C\n> 到期日: 0dte\n> 入场: 2.10\n\n彩票\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T18:12:04.485000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6980.0c_20260211204006"
+    },
+    {
+      "id": "1470832266463805472",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone\n\nhellooo teslaaaaaa\n\n@everyone\n\n你好，特斯拉！",
+      "timestamp": "2026-02-10T17:22:19.067000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470831601981067376",
+      "channel_id": "1459878042955677869",
+      "content": ".50 to 3.00 would be insane that means the 6995 gonna go 1.00 to like 9.00 if things pop\n\n.50 到 3.00 会很疯狂，这意味着 6995 会从 1.00 涨到大约 9.00 如果事情发生变化的话。",
+      "timestamp": "2026-02-10T17:19:40.642000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470831379699728457",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone they really fucked those 7005 SPX call we entered below this price on spy \n\nIf we can launch spy price to 697 from here 695 they will go back over 1.00 from .50  they can even maybe go to 3.00 if we spike up fr even with them now being .50 ! \n\nI thought .95 was good price holy shit volatility is nuts\n\n@everyone 他们真的搞砸了我们在这个价格以下进入的 7005 SPX 看涨期权 \n\n如果我们能把 SPY 的价格从这里的 695 推到 697，它们将从 0.50 回升到超过 1.00，甚至可能在我们上涨时达到 3.00，即使现在它们是 0.50！ \n\n我觉得 0.95 是个好价格，天哪，波动性太疯狂了",
+      "timestamp": "2026-02-10T17:18:47.646000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470830979873640651",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nNice bound 6995 and 615 green \n\nLet’s see the 7005 and 616 recover and push now all push\n\n@everyone \n\n漂亮的绑定 6995 和 615 绿色 \n\n让我们看看 7005 和 616 现在的恢复情况，大家一起加油！",
+      "timestamp": "2026-02-10T17:17:12.320000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470823028870091027",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 615C\n> Expiry 0dte\n> Entry: .81\n\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 615C\n> 到期: 0天到期\n> 进场: .81\n\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T16:45:36.653000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_615.0c_20260211204006"
+    },
+    {
+      "id": "1470818101581975644",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6995C\n> Expiry 0dte\n> Entry: 1.20\n\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6995C\n> 到期: 0天到期\n> 入场: 1.20\n\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T16:26:01.896000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6995.0c_20260211204006"
+    },
+    {
+      "id": "1470813768299712771",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 616C\n> Expiry 0dte\n> Entry: .86\n\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 616C\n> 到期: 0天到期\n> 进场: .86\n\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T16:08:48.761000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_616.0c_20260211204006"
+    },
+    {
+      "id": "1470811354112725022",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 7005C\n> Expiry 0dte\n> Entry: .95\n\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 7005C\n> 到期日: 0天到期\n> 入场: .95\n\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T15:59:13.174000+00:00",
+      "has_order": true,
+      "order_id": "SPX_7005.0c_20260211204006"
+    },
+    {
+      "id": "1470808537524605049",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $TSLA\n> Strike: 432.5C\n> Expiry 2/11\n> Entry: 1.65\n\nLotto lotto I think Tesla over 425 can short squeeze but it’s a risky lotto for tomorrow !! Expiration \n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $TSLA\n> 行权价: 432.5C\n> 到期日: 2/11\n> 入场: 1.65\n\n彩票彩票，我认为特斯拉超过425可以进行短线挤压，但这是明天的高风险彩票！！ 到期 \n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T15:48:01.647000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470803475397869811",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $AAPL\n> Strike: 275C\n> Expiry 2/11\n> Entry: 1.39\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $AAPL\n> 行权价: 275C\n> 到期日 2/11\n> 入场: 1.39\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T15:27:54.742000+00:00",
+      "has_order": true,
+      "order_id": "AAPL_275.0c_20260211204006"
+    },
+    {
+      "id": "1470798707812335687",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone qqq remember 617 is my shift level we’re here now !! \n\nAbove is 621 \n\nI don’t know how many days this is going to take 617 can be a big resistance \n\nBut if it breakouts then it’s time !!\n\n@everyone qqq 记住 617 是我的换班水平，我们现在在这里！！\n\n上面是 621\n\n我不知道这需要多少天，617 可能是一个大阻力\n\n但如果突破了，那就是时候了！！",
+      "timestamp": "2026-02-10T15:08:58.061000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470798127656341546",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone seems like all the fun is happening in plays like we are printing on 2/11 and 0dtes that’s not what I want to do those march plays are positions I want to see a big swing rally move on this market \n\nI’ve seen this so many times spy getting close to 700 if volatility vanishes if dips remain shallow itll flow to 700\n\n@everyone 看起来所有的乐趣都发生在像我们在 2/11 和 0dtes 上打印的交易中，这不是我想做的事情，那些三月的交易是我想要的头寸，我想看到这个市场有一个大的反弹走势。\n\n我已经看到过很多次，spy 接近 700，如果波动性消失，如果回调保持浅薄，它将流向 700。",
+      "timestamp": "2026-02-10T15:06:39.741000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470797204212945082",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nMorning recap \n\nTSLA and nvda swings overnight paid this morning on the pumps those Tesla 430c saw 2.70 -3.00 this morning from 1.60 overnight \n\nNvda dip call just paid again 1.40 to 1.80’s \n\nSPX’s flew insane 1.00 to 4.00 + \n3.00 to 7.00+ \n\nBangers\n\n@everyone \n\n早间回顾 \n\nTSLA 和 nvda 的隔夜波动今早在上涨中获利，特斯拉 430c 今早从隔夜的 1.60 涨到了 2.70 - 3.00 \n\nNvda 的下跌看涨期权再次获利，从 1.40 涨到了 1.80 \n\nSPX 的波动非常疯狂，从 1.00 涨到了 4.00 + \n3.00 涨到了 7.00 + \n\n牛逼",
+      "timestamp": "2026-02-10T15:02:59.575000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470795171284127785",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone those SPX calls took off 🕺\n\n@everyone 那些SPX看涨期权起飞了 🕺",
+      "timestamp": "2026-02-10T14:54:54.887000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470794582252851262",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $AMD\n> Strike: 220C\n> Expiry 2/13\n> Entry :3.60\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $AMD\n> 行权价: 220C\n> 到期日: 2/13\n> 入场价: 3.60\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T14:52:34.451000+00:00",
+      "has_order": true,
+      "order_id": "AMD_220.0c_20260211204006"
+    },
+    {
+      "id": "1470794051769995370",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $NVDA\n> Strike: 190C\n> Expiry 2/11\n> Entry :1.40\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $NVDA\n> 行权价: 190C\n> 到期日: 2/11\n> 入场价: 1.40\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T14:50:27.974000+00:00",
+      "has_order": true,
+      "order_id": "NVDA_190.0c_20260211204006"
+    },
+    {
+      "id": "1470791245067714680",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6990C\n> Expiry 0dte\n> Entry : 3.65\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6990C\n> 到期日: 0天到期\n> 入场价: 3.65\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T14:39:18.804000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6990.0c_20260211204006"
+    },
+    {
+      "id": "1470791099332169969",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 7000C\n> Expiry 0dte\n> Entry : 1.70\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 7000C\n> 到期: 0天到期\n> 进场: 1.70\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-10T14:38:44.058000+00:00",
+      "has_order": true,
+      "order_id": "SPX_7000.0c_20260211204006"
+    },
+    {
+      "id": "1470521705242955840",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone 2.65  from 1.10 !!! \n\n(+140%) in minutes make sure to trim cons can see $0 fast lol\n\n@everyone 2.65 从 1.10 !!!\n\n(+140%) 在几分钟内确保修剪缺点，可以快速看到 $0 哈哈",
+      "timestamp": "2026-02-09T20:48:15.502000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470521016752017602",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone SPX 2.40 !\n\n@everyone SPX 2.40 !",
+      "timestamp": "2026-02-09T20:45:31.353000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470520850418630806",
+      "channel_id": "1459878042955677869",
+      "content": "2.15 !\n\n2.15 !",
+      "timestamp": "2026-02-09T20:44:51.696000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470520725562720326",
+      "channel_id": "1459878042955677869",
+      "content": "Now 2.00 !\n\n现在 2.00 !",
+      "timestamp": "2026-02-09T20:44:21.928000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470520629064368367",
+      "channel_id": "1459878042955677869",
+      "content": "Can shoot over 4.00 if spikes\n\n可以在有尖峰时超过 4.00",
+      "timestamp": "2026-02-09T20:43:58.921000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470520408145924173",
+      "channel_id": "1459878042955677869",
+      "content": "1.90 !\n\n1.90 !",
+      "timestamp": "2026-02-09T20:43:06.250000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470520394258714739",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone 1.80 !\n\n@everyone 1.80 !",
+      "timestamp": "2026-02-09T20:43:02.939000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470520182924640326",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6970C\n> Expiry 0dte\n> Entry : 1.10\n\nLotto risky 19 minutes left \n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6970C\n> 到期: 0天到期\n> 入场: 1.10\n\n彩票风险，剩余19分钟\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T20:42:12.553000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6970.0c_20260211204006"
+    },
+    {
+      "id": "1470498800039628884",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone Completely forgot Tesla offers 0dte for mon, wed, Friday watched today’s 0dte go from under 1.00 to 6.00 , would like to see more of that !! 🔥\n\n@everyone 完全忘记了特斯拉在周一、周三和周五提供0dte，今天的0dte从不到1.00涨到了6.00，想看到更多这样的情况！！ 🔥",
+      "timestamp": "2026-02-09T19:17:14.476000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470498568250069044",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $TSLA\n> Strike: 430C\n> Expiry 2/11\n> Entry : 1.69\n\nLotto Wednesday expiration , lotto very risky !!! But can give high returns \n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $TSLA\n> 行权价: 430C\n> 到期日: 2/11\n> 入场价: 1.69\n\n周三彩票到期，彩票风险很大！！！但可能带来高回报\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T19:16:19.213000+00:00",
+      "has_order": true,
+      "order_id": "TSLA_430.0c_20260211204006"
+    },
+    {
+      "id": "1470497531191492608",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $NVDA\n> Strike: 195C\n> Expiry 2/11\n> Entry : .87\n\nLotto Wednesday expiration , lotto very risky !!! But can give high returns \n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $NVDA\n> 行权价: 195C\n> 到期日: 2/11\n> 入场价: .87\n\n周三彩票到期，彩票风险很大！！！但可以带来高回报\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T19:12:11.959000+00:00",
+      "has_order": true,
+      "order_id": "NVDA_195.0c_20260211204006"
+    },
+    {
+      "id": "1470484225672216678",
+      "channel_id": "1459878042955677869",
+      "content": "**Large ask-side buys in calls (e.g., 54 call ~11DTE, 50 call longer), aggressive premium on upside strikes, suggests institutional conviction on potential rebound or sector rotation into semis amid QQQ strength. Not overwhelming size but aligned with tape.**\n\n**在看涨期权中大额买入（例如，54看涨期权~11天到期，50看涨期权更长），对上涨行使价的溢价激进，表明机构对潜在反弹或在QQQ强势中向半导体行业轮动的信心。虽然规模不算庞大，但与市场走势一致。**",
+      "timestamp": "2026-02-09T18:19:19.676000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470483931273888038",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $INTC\n> Strike: 54C\n> Expiry 2/27\n> Entry : 1.70\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $INTC\n> 行权价: 54C\n> 到期日: 2/27\n> 入场价: 1.70\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T18:18:09.486000+00:00",
+      "has_order": true,
+      "order_id": "INTC_54.0c_20260211204006"
+    },
+    {
+      "id": "1470476744585904149",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $IBIT\n> Strike: 41C\n> Expiry 3/20\n> Entry : 2.36\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $IBIT\n> 行权价: 41C\n> 到期日: 3/20\n> 入场价: 2.36\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T17:49:36.046000+00:00",
+      "has_order": true,
+      "order_id": "IBIT_41.0c_20260211204006"
+    },
+    {
+      "id": "1470475300558209187",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $MSTR\n> Strike: 160C\n> Expiry 3/20\n> Entry : 7.00\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $MSTR\n> 行权价: 160C\n> 到期日: 3/20\n> 进场价: 7.00\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T17:43:51.763000+00:00",
+      "has_order": true,
+      "order_id": "MSTR_160.0c_20260211204006"
+    },
+    {
+      "id": "1470472796273381510",
+      "channel_id": "1459878042955677869",
+      "content": "Nvda has more near term contracts 195 , the think ahead bet is to use that momentum and just grab time instead of chasing those shortens use that momentum in chance it breaks further longterm shift 200+\n\nNvda 有更多的短期合同 195，前瞻性的赌注是利用这种势头，抓住时间，而不是追逐那些短期合约，利用这种势头来争取进一步突破长期转变 200+",
+      "timestamp": "2026-02-09T17:33:54.695000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470472403896504676",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $NVDA\n> Strike: 215C\n> Expiry 3/13\n> Entry : 2.83\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $NVDA\n> 行权价: 215C\n> 到期日: 3/13\n> 入场价: 2.83\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T17:32:21.145000+00:00",
+      "has_order": true,
+      "order_id": "NVDA_215.0c_20260211204006"
+    },
+    {
+      "id": "1470467189428588618",
+      "channel_id": "1459878042955677869",
+      "content": "**$PLTR Key call strikes & expirations: Heavy flow in near-term (e.g., Feb/Mar 2026) and swing (April/June 2026) calls, repeated buys at ATM/mid-delta strikes.\n•  Total call premium vs put premium: Significantly skewed bullish (~$33M+ net call premium in large blocks).\n•  Call/Put ratio: Strongly >3:1, with call dominance.\n•  Flow type: POSITION trade (longer-dated accumulation) + SWING.**\n\n**$PLTR 关键看涨期权行权价与到期日：近期（例如，2026年2月/3月）和波动（2026年4月/6月）看涨期权的重流入，在ATM/中间德尔塔行权价上重复买入。\n•  看涨期权总溢价与看跌期权溢价：显著偏向看涨（大额区块中净看涨期权溢价超过3300万美元）。\n•  看涨/看跌比率：强烈大于3:1，显示看涨主导。\n•  流动类型：头寸交易（长期积累）+ 波动。**",
+      "timestamp": "2026-02-09T17:11:37.919000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470466776109289503",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $PLTR\n> Strike: 155C\n> Expiry 3/13\n> Entry : 5.00\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $PLTR\n> 行权价: 155C\n> 到期日: 3/13\n> 入场价: 5.00\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T17:09:59.376000+00:00",
+      "has_order": true,
+      "order_id": "PLTR_155.0c_20260211204006"
+    },
+    {
+      "id": "1470463079312654356",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 630C\n> Expiry 2/20\n> Entry : 2.11\n\nStarter \n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 630C\n> 到期日: 2/20\n> 入场价: 2.11\n\n初始\n==============================\n\n==============================**",
+      "timestamp": "2026-02-09T16:55:17.991000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_630.0c_20260211204006"
+    },
+    {
+      "id": "1469440800021676034",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone recap 👀 look now \n\nI like what I see !! \n\nSPY 670 to 692 overnight \n\nLegendary shiii 🔥 blessings LFG\n\n@everyone 回顾 👀 现在看 \n\n我喜欢我看到的！！ \n\nSPY 从 670 到 692 过夜 \n\n传奇的 shiii 🔥 祝福 LFG",
+      "timestamp": "2026-02-06T21:13:07.615000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469435736716742679",
+      "channel_id": "1459878042955677869",
+      "content": "Bro literally $1500 now from $100 bucks\n\n兄弟，现在从100美元变成1500美元。",
+      "timestamp": "2026-02-06T20:53:00.429000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469435686129106944",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone damnit I knew it … \n\nAll the SPX trades over 1,000%’s of %\n\n@everyone 可恶，我早就知道了……\n\n所有SPX交易超过1000%的百分比",
+      "timestamp": "2026-02-06T20:52:48.368000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469429078527312034",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone **TODAYS RECAP\n\n🟢$HOOD 82C 2/6 (+56%) \n🟢$NVDA 177.5C 2/6 (+473%) \n🟢$TSLA 412.5C (0DTE) (+146%) \n🟢$AMD 205C (0DTE) (+160%) \n🟢$AVGO 330C (0DTE) (+433%) \n🟢$MSFT 400C (0DTE) (+146%) \n🟢$SPX 6930C (0DTE) (+295%) \n🟢$SPX 6940C (0DTE) (+390%) \n🟢$SPX 6935C (0DTE) (+244%)**\n\n@everyone **今天的回顾\n\n🟢$HOOD 82C 2/6 (+56%) \n🟢$NVDA 177.5C 2/6 (+473%) \n🟢$TSLA 412.5C (0DTE) (+146%) \n🟢$AMD 205C (0DTE) (+160%) \n🟢$AVGO 330C (0DTE) (+433%) \n🟢$MSFT 400C (0DTE) (+146%) \n🟢$SPX 6930C (0DTE) (+295%) \n🟢$SPX 6940C (0DTE) (+390%) \n🟢$SPX 6935C (0DTE) (+244%)**",
+      "timestamp": "2026-02-06T20:26:32.993000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469393835183308857",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone WHERES ALL THE PROFITS \n\n#🟢・profit-screenshots\n\nalso @ me in there or make post on twitter too will retweet 🔥\n\n@everyone 所有的利润在哪里\n\n#🟢・利润截图\n\n也请在那儿@我或者在推特上发帖，我会转发 🔥",
+      "timestamp": "2026-02-06T18:06:30.325000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469393030342774885",
+      "channel_id": "1459878042955677869",
+      "content": "Perfect day 🔥\n\n完美的一天 🔥",
+      "timestamp": "2026-02-06T18:03:18.436000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469392979729973311",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone msft from shitty to 100% bangers\n\n@everyone msft 从糟糕到 100% 杰作",
+      "timestamp": "2026-02-06T18:03:06.369000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469392442309742743",
+      "channel_id": "1459878042955677869",
+      "content": "It’s been lagging all day\n\n它整天都在延迟",
+      "timestamp": "2026-02-06T18:00:58.238000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469392393668137043",
+      "channel_id": "1459878042955677869",
+      "content": "If msft starts launching\n\n如果msft开始推出",
+      "timestamp": "2026-02-06T18:00:46.641000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469392379197784145",
+      "channel_id": "1459878042955677869",
+      "content": "That could be the market trigger\n\n那可能是市场触发因素",
+      "timestamp": "2026-02-06T18:00:43.191000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469392367588212840",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone msft out of nowhere !! Stock now 400\n\n@everyone 微软突然崛起！！股票现在400",
+      "timestamp": "2026-02-06T18:00:40.423000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469391428189814970",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone remember that qqq is now $2 above 607 resistance \n\nThere’s nothing until 614 \n\nIs there news or something ? \n\nSpy and qqq can flow up another $4\n\n@everyone 记得qqq现在在607阻力位上方$2\n\n在614之前没有任何东西\n\n有什么新闻吗？\n\nSpy和qqq可以再上涨$4",
+      "timestamp": "2026-02-06T17:56:56.453000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469390261741420595",
+      "channel_id": "1459878042955677869",
+      "content": "3.00 !!\n\n3.00 !!",
+      "timestamp": "2026-02-06T17:52:18.350000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469390245366730940",
+      "channel_id": "1459878042955677869",
+      "content": "CONS NOW 2.50 from .90\n\nCONS NOW 2.50 从 .90",
+      "timestamp": "2026-02-06T17:52:14.446000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469390210700935462",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone OHHHHHH MY \n\nCINEMA\n\n@everyone 哦哦哦哦 我的 \n\n电影院",
+      "timestamp": "2026-02-06T17:52:06.181000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469389937118806076",
+      "channel_id": "1459878042955677869",
+      "content": "🔋🔋🔋\n\n🔋🔋🔋",
+      "timestamp": "2026-02-06T17:51:00.954000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469389914515836999",
+      "channel_id": "1459878042955677869",
+      "content": "We are fucking rolling\n\n我们他妈的在滚动",
+      "timestamp": "2026-02-06T17:50:55.565000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469389886854271106",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone 1.60 on the new SPX just like that !! New high of day !! Again\n\n@everyone 1.60 在新的 SPX 上就这样 !! 今天的新高 !! 又一次",
+      "timestamp": "2026-02-06T17:50:48.970000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469388850672435303",
+      "channel_id": "1459878042955677869",
+      "content": "1.30 !\n\n1.30 !",
+      "timestamp": "2026-02-06T17:46:41.925000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469388650415394838",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone cons now 1.25 !\n\n@everyone 现在的消耗是 1.25！",
+      "timestamp": "2026-02-06T17:45:54.180000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469388608535527486",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone there’s gonna be a move at 1oclock in 15 min candle showing can lose or win big\n\n@everyone 在1点钟会有一个动作，15分钟的蜡烛图显示可能会大幅亏损或盈利。",
+      "timestamp": "2026-02-06T17:45:44.195000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469388113150218354",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6935C\n> Expiry 0dte\n> Entry : .90\n\nRisky lotto \n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6935C\n> 到期日: 0天到期\n> 入场: .90\n\n风险彩票\n==============================\n\n==============================**",
+      "timestamp": "2026-02-06T17:43:46.086000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6935.0c_20260211204006"
+    },
+    {
+      "id": "1469385625009520925",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone PERFECT DAY\n\n@everyone 完美的一天",
+      "timestamp": "2026-02-06T17:33:52.867000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469385582953103497",
+      "channel_id": "1459878042955677869",
+      "content": "Good day\n\n好日子",
+      "timestamp": "2026-02-06T17:33:42.840000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469385518822330612",
+      "channel_id": "1459878042955677869",
+      "content": "All the plays\n\n所有的戏剧",
+      "timestamp": "2026-02-06T17:33:27.550000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469385417278099483",
+      "channel_id": "1459878042955677869",
+      "content": "Nobody does thisssss\n\n没有人这样做ssss",
+      "timestamp": "2026-02-06T17:33:03.340000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469385400429838559",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone 6904’s now $100 from .50 !!!!!!!!\n\n@everyone 6904 现在从 .50 增加到 $100 !!!!!!!!",
+      "timestamp": "2026-02-06T17:32:59.323000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469385291973394544",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone BOOOOOOOOOOOM\n\n@everyone 轰隆隆隆隆隆隆隆",
+      "timestamp": "2026-02-06T17:32:33.465000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469384186157600789",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone  spy just made new Hugh of day off the dip !\n\n@everyone spy刚刚在低谷时创造了新的Hugh的休息日！",
+      "timestamp": "2026-02-06T17:28:09.818000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469381614071971984",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6940C\n> Expiry 0dte\n> Entry : .55\n\n\nSuper extremely risky lotto \n\n\nThis is only if by chance spy\nJumps to 690 miraculously haha I think everyone is starting to realize that could be a crazy possibility to end the week \n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6940C\n> 到期日: 0dte\n> 入场价: .55\n\n\n超级极其风险的乐透 \n\n\n这仅仅是如果偶然间spy\n奇迹般地跳到690哈哈，我觉得每个人都开始意识到这可能是结束这一周的疯狂可能性 \n==============================\n\n==============================**",
+      "timestamp": "2026-02-06T17:17:56.585000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6940.0c_20260211204006"
+    },
+    {
+      "id": "1469379042380615773",
+      "channel_id": "1459878042955677869",
+      "content": "Omg what a squeeze\n\n天哪，真是太挤了",
+      "timestamp": "2026-02-06T17:07:43.446000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469379025070723323",
+      "channel_id": "1459878042955677869",
+      "content": "Someone is buying\n\n有人在购买",
+      "timestamp": "2026-02-06T17:07:39.319000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469378991109705832",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone SPX now 1.60 !!!\n\n@everyone SPX 现在 1.60 !!!",
+      "timestamp": "2026-02-06T17:07:31.222000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469378476946751571",
+      "channel_id": "1459878042955677869",
+      "content": "I think that recent dip just built something 👀\n\n我认为最近的下跌只是构建了一些东西 👀",
+      "timestamp": "2026-02-06T17:05:28.636000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469378384667611199",
+      "channel_id": "1459878042955677869",
+      "content": "We could actually breakout here hard\n\n我们实际上可以在这里大幅突破",
+      "timestamp": "2026-02-06T17:05:06.635000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469378340052799575",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6930C\n> Expiry 0dte\n> Entry : 1.05\n\nSuper extremely risky lotto \n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6930C\n> 到期: 0天到期\n> 入场: 1.05\n\n超级极其风险的乐透 \n==============================\n\n==============================**",
+      "timestamp": "2026-02-06T17:04:55.998000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6930.0c_20260211204006"
+    },
+    {
+      "id": "1469377653436973283",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone $TGT strength this week stock is a good sign this stock can start recovering\n\n@everyone 本周 $TGT 的强劲表现是一个好兆头，这只股票可能开始复苏。",
+      "timestamp": "2026-02-06T17:02:12.296000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469375123374080205",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone Nvda obviously if burry is wrong about all that money stuff with nvda it’s going to see 300/500 out of all these ai names you want Nvda \n\nDon’t worry about it now , it gets serious above 200 you won’t miss a thing above 200 , just a heads up\n\n@everyone Nvda 显然，如果 Burry 对于所有这些与 nvda 相关的资金问题是错的，它将会在所有这些 AI 名称中看到 300/500，你想要 Nvda\n\n现在不用担心，超过 200 时会变得严肃，你不会错过超过 200 的任何事情，只是提前提醒一下",
+      "timestamp": "2026-02-06T16:52:09.082000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469374616660082914",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone anybody hold those nvda 177.5 calls from yesterday now $8 in the money and $700 dollars a contract from 100 bucks this\n\n@everyone 有人持有昨天的 NVDA 177.5 看涨期权吗？现在每份合约盈利 8 美元，合约价值从 100 美元涨到 700 美元。",
+      "timestamp": "2026-02-06T16:50:08.272000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469374084990238832",
+      "channel_id": "1459878042955677869",
+      "content": "Still think it can reach 2020 highs again\n\n仍然认为它可以再次达到2020年的高点",
+      "timestamp": "2026-02-06T16:48:01.512000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469373996674846732",
+      "channel_id": "1459878042955677869",
+      "content": "So it’s a high risk for now but it’s been so strong\n\n所以现在风险很高，但它一直很强劲。",
+      "timestamp": "2026-02-06T16:47:40.456000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469373947450622177",
+      "channel_id": "1459878042955677869",
+      "content": "And they don’t even know what they’re doing yet\n\n他们甚至还不知道自己在做什么",
+      "timestamp": "2026-02-06T16:47:28.720000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469373829238489142",
+      "channel_id": "1459878042955677869",
+      "content": "Great stock\n\n好股票",
+      "timestamp": "2026-02-06T16:47:00.536000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469373815044964402",
+      "channel_id": "1459878042955677869",
+      "content": "It’s Earnings chaos has been recovered\n\n收益混乱已被恢复",
+      "timestamp": "2026-02-06T16:46:57.152000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469373670211190959",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone notice how INTC has quietly snuck back above 50 just $4 away from ath\n\n@everyone 注意到 INTC 已经悄悄回到 50 以上，只差 $4 就能达到历史最高点",
+      "timestamp": "2026-02-06T16:46:22.621000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469372549149491422",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nAVGO 331 WHAT !!!!\n\n@everyone \n\nAVGO 331 什么 !!!!",
+      "timestamp": "2026-02-06T16:41:55.339000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469372094281416755",
+      "channel_id": "1459878042955677869",
+      "content": "AI doesn’t run on magic. It runs on power, cooling, and uptime.\nEvery GPU rack, every hyperscale data center, every AI buildout hits the same wall, infrastructure, and Vertiv owns that wall.\n\nThis isn’t cyclical demand. It’s structural.\nYou can delay phones. You can delay cars.\nYou can’t delay electricity and cooling when trillions are being poured into AI.\n\nVRT is the quiet compounder behind the loudest trend on earth.\nNot the pick. Not the shovel.\nThe power switch.\n\nAI 不是靠魔法运作的。它依赖于电力、冷却和正常运行时间。  \n每个 GPU 机架、每个超大规模数据中心、每个 AI 建设都面临同样的壁垒，基础设施，而 Vertiv 拥有这道壁垒。\n\n这不是周期性需求。这是结构性需求。  \n你可以推迟手机。你可以推迟汽车。  \n当数万亿资金涌入 AI 时，你无法推迟电力和冷却。\n\nVRT 是地球上最响亮趋势背后的安静复合者。  \n不是铲子。不是铁锹。  \n而是电源开关。",
+      "timestamp": "2026-02-06T16:40:06.890000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470905832064418067",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ 最高+178%💰",
+      "timestamp": "2026-02-10T22:14:38.473000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_608.0p_20260211204005"
+    },
+    {
+      "id": "1470824898166395002",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +23%",
+      "timestamp": "2026-02-10T16:53:02.328000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470820914005540896",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 613p 02/10 @0.69",
+      "timestamp": "2026-02-10T16:37:12.430000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_613.0p_20260211204007"
+    },
+    {
+      "id": "1470810995923353722",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ 我止损了",
+      "timestamp": "2026-02-10T15:57:47.775000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_615.0p_20260211204005"
+    },
+    {
+      "id": "1470799260499837010",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 618c 02/10 @0.90",
+      "timestamp": "2026-02-10T15:11:09.832000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_618.0c_20260211204007"
+    },
+    {
+      "id": "1470795149914144803",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +17%",
+      "timestamp": "2026-02-10T14:54:49.792000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470792010163032166",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  2/11",
+      "timestamp": "2026-02-10T14:42:21.217000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470791436361531545",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $TSLA 437.5c 02/10 @0.78",
+      "timestamp": "2026-02-10T14:40:04.412000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470601440387924059",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  总结：最高 +459%🔥🔥🔥🔥",
+      "timestamp": "2026-02-10T02:05:05.842000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470457123183005707",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +280🔥🔥  \n之后会考虑少一些推送涨幅情况，进场后我一般自己也是设好止盈止损和back stop之类，就去研究其他东西，最近一直在打磨一个我自己开发的指标，manage yourself~",
+      "timestamp": "2026-02-09T16:31:37.939000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470448744750121118",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +220%",
+      "timestamp": "2026-02-09T15:58:20.365000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470447012817145999",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ +177% 还行还行🔥",
+      "timestamp": "2026-02-09T15:51:27.440000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470438330520043624",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ +95%",
+      "timestamp": "2026-02-09T15:16:57.419000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470435903930372149",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ +54%",
+      "timestamp": "2026-02-09T15:07:18.875000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470435602691264512",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  $QQQ + 25%",
+      "timestamp": "2026-02-09T15:06:07.054000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1470434634826387497",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 612c 02/09 @0.84",
+      "timestamp": "2026-02-09T15:02:16.297000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_612.0c_20260211204007"
+    },
+    {
+      "id": "1469435024133591381",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  $QQQ +126%",
+      "timestamp": "2026-02-06T20:50:10.536000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469422826959143043",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  最高 +85%",
+      "timestamp": "2026-02-06T20:01:42.503000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469371287037280278",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +17%",
+      "timestamp": "2026-02-06T16:36:54.428000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469368010438480064",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 608c 02/06 @0.95",
+      "timestamp": "2026-02-06T16:23:53.226000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_608.0c_20260211204007"
+    },
+    {
+      "id": "1469350325298266224",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +140% 刚才",
+      "timestamp": "2026-02-06T15:13:36.760000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469340092945399820",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +63%",
+      "timestamp": "2026-02-06T14:32:57.177000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469105895433699542",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +43%",
+      "timestamp": "2026-02-05T23:02:20.139000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469021442845839433",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  aapl还是在的",
+      "timestamp": "2026-02-05T17:26:45.073000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469021406644801536",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ的止损",
+      "timestamp": "2026-02-05T17:26:36.442000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469021365720973522",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  全止损，今天被做市商玩了☹️",
+      "timestamp": "2026-02-05T17:26:26.685000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469016572831076656",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 595p 02/05 @1.00",
+      "timestamp": "2026-02-05T17:07:23.971000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_595.0p_20260211204007"
+    },
+    {
+      "id": "1469006734076022787",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  02/06",
+      "timestamp": "2026-02-05T16:28:18.229000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469006654929375293",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $AAPL 280c 02/05 @0.73",
+      "timestamp": "2026-02-05T16:27:59.359000+00:00",
+      "has_order": true,
+      "order_id": "AAPL_280.0c_20260211204007"
+    },
+    {
+      "id": "1469003335163056314",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +20%",
+      "timestamp": "2026-02-05T16:14:47.865000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1469000531006455990",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 590p 02/05 @1.00",
+      "timestamp": "2026-02-05T16:03:39.302000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_590.0p_20260211204007"
+    },
+    {
+      "id": "1468991826697388164",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +19%",
+      "timestamp": "2026-02-05T15:29:04.033000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468989910785724479",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 588p 02/05 @1.00",
+      "timestamp": "2026-02-05T15:21:27.244000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_588.0p_20260211204007"
+    },
+    {
+      "id": "1468690359428321421",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +35%",
+      "timestamp": "2026-02-04T19:31:08.635000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468640369611640976",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: 我止损了",
+      "timestamp": "2026-02-04T16:12:30.134000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468638438126387374",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  这笔波段，不是末日",
+      "timestamp": "2026-02-04T16:04:49.632000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468635485743349955",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $MSFT 430c 02/06 @0.80",
+      "timestamp": "2026-02-04T15:53:05.729000+00:00",
+      "has_order": true,
+      "order_id": "MSFT_430.0c_20260211204007"
+    },
+    {
+      "id": "1468616516923559958",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 620c 02/04 @0.8",
+      "timestamp": "2026-02-04T14:37:43.210000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_620.0c_20260211204007"
+    },
+    {
+      "id": "1468300267828154429",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +880%，我想我今天不用继续报数了，一月完美，二月开门红！",
+      "timestamp": "2026-02-03T17:41:03.550000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468293776056254668",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +770%  什么概念？最近的波动率太可观了",
+      "timestamp": "2026-02-03T17:15:15.791000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468293557990199398",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +579% 应该不会没买吧，有买的给我发截图🔥🔥🔥🔥🔥",
+      "timestamp": "2026-02-03T17:14:23.800000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468265557655818382",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  435%🔥🔥🔥🔥",
+      "timestamp": "2026-02-03T15:23:08+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468260889835606177",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +357%🔥🔥🔥",
+      "timestamp": "2026-02-03T15:04:35.105000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468259758745190502",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +213%🔥🔥",
+      "timestamp": "2026-02-03T15:00:05.432000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468255986325258436",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: 太迅速啦",
+      "timestamp": "2026-02-03T14:45:06.017000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468255807870079132",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +97%",
+      "timestamp": "2026-02-03T14:44:23.470000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1468255011036205149",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 622p 02/03 @0.74",
+      "timestamp": "2026-02-03T14:41:13.490000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_622.0p_20260211204007"
+    },
+    {
+      "id": "1467912141918044318",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +36%",
+      "timestamp": "2026-02-02T15:58:47.122000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1467905814311469148",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 625p 02/02 @0.90",
+      "timestamp": "2026-02-02T15:33:38.503000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_625.0p_20260211204007"
+    },
+    {
+      "id": "1466831231726518625",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +28%",
+      "timestamp": "2026-01-30T16:23:38.050000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466830426676138015",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: 打平了，减了之前加的仓位。",
+      "timestamp": "2026-01-30T16:20:26.111000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466824578570387598",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  加了点仓 成本0.51 高风险",
+      "timestamp": "2026-01-30T15:57:11.814000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466818761439973477",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 620p 01/30 @0.73",
+      "timestamp": "2026-01-30T15:34:04.902000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_620.0p_20260211204007"
+    },
+    {
+      "id": "1466805667565146428",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +44%",
+      "timestamp": "2026-01-30T14:42:03.079000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466804866214137959",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 630c 01/30 @1.00",
+      "timestamp": "2026-01-30T14:38:52.022000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_630.0c_20260211204007"
+    },
+    {
+      "id": "1466491832782295242",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +79%",
+      "timestamp": "2026-01-29T17:54:59.036000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466489683306483889",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 623p 01/29 @0.80",
+      "timestamp": "2026-01-29T17:46:26.561000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0p_20260211204007"
+    },
+    {
+      "id": "1466481633300582740",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  我止损了这笔",
+      "timestamp": "2026-01-29T17:14:27.290000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466477579853758505",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 619p 01/29 @0.80",
+      "timestamp": "2026-01-29T16:58:20.873000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_619.0p_20260211204007"
+    },
+    {
+      "id": "1466114646800072715",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +72",
+      "timestamp": "2026-01-28T16:56:10.890000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466111919973994652",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  QQQ +58%",
+      "timestamp": "2026-01-28T16:45:20.764000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466110335491510481",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ +35%",
+      "timestamp": "2026-01-28T16:39:02.994000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466100734880911452",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: 今晚FOMC决议，如果不想度过这个时间点，可以尽早止盈止损",
+      "timestamp": "2026-01-28T16:00:54.030000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466100342100988151",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +25％",
+      "timestamp": "2026-01-28T15:59:20.384000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466089123205873684",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 629p 01/28 @0.82",
+      "timestamp": "2026-01-28T15:14:45.591000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_629.0p_20260211204007"
+    },
+    {
+      "id": "1466082421806993682",
+      "channel_id": "1454140095442583715",
+      "content": "这个是说上面的 \n\nDayTrade分享 - 期权:  BTO $NVDA 197.5c 01/30 @0.66",
+      "timestamp": "2026-01-28T14:48:07.853000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1466081977168826596",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +26％✌️️",
+      "timestamp": "2026-01-28T14:46:21.843000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465732548947607626",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +207%🔥🔥 很好了",
+      "timestamp": "2026-01-27T15:37:51.663000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465726015669276743",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +190%🔥",
+      "timestamp": "2026-01-27T15:11:54.008000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465722302414061682",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +155% 🔥",
+      "timestamp": "2026-01-27T14:57:08.699000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465721738095624284",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +93% 不错了",
+      "timestamp": "2026-01-27T14:54:54.155000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465721271886024890",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +56%囖",
+      "timestamp": "2026-01-27T14:53:03.002000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465719393509183640",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $QQQ 630c 01/27 @0.61",
+      "timestamp": "2026-01-27T14:45:35.162000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_630.0c_20260211204007"
+    },
+    {
+      "id": "1465398200545579090",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: QQQ 已翻倍",
+      "timestamp": "2026-01-26T17:29:16.792000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465374724526706889",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人  \n日内交易分享 - 期权:  +64％",
+      "timestamp": "2026-01-26T15:55:59.673000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465370605414125792",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人  \n日内交易分享 - 期权:  $QQQ +37%。",
+      "timestamp": "2026-01-26T15:39:37.600000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465369443298443416",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  $QQQ +28%",
+      "timestamp": "2026-01-26T15:35:00.530000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465368897980203082",
+      "channel_id": "1454140095442583715",
+      "content": "```\n\n我们需要翻译成简体中文。注意保留Markdown格式，包括可能的空格和特殊符号。可能\"@everyone\"是提及所有人的标签，通常不翻译，但根据上下文，可能是一个Discord或Slack的提及，可以保留原样。 \"DayTrade分享 - 期權:  BTO $QQQ 626c 01/26 @0.85\" 这部分需要翻译。 \"BTO\"可能是\"Buy to Open\"的缩写，在期权交易中常见，通常保留英文缩写。 \"$QQQ\"是股票代码，保留。 \"626c\"可能是行权价626的看涨期权？\"01/26\"是到期日。 \"@0.85\"是价格。所以翻译可能是：\"DayTrade分享 - 期权:  BTO $QQQ 626c 01/26 @0.85\"。但需要将\"分享\"和\"期权\"保留中文。 \"DayTrade\"可能保留英文或翻译为\"日内交易\"。但原文是\"DayTrade分享 - 期權\"，在中文社区可能直接使用\"DayTrade分享\"或\"日内交易分享\"。为了准确，我们可以翻译为\"日内交易分享 - 期权\"。但原文是\"DayTrade分享\"，可能是一个固定栏目名，也许不翻译。但指令说翻译文本，所以我们应该翻译所有可翻译的部分。 \"DayTrade\"是英文，可以翻译为\"日内交易\"。 \"分享\"是中文，但原文是\"DayTrade分享\"，可能是一个组合。我们翻译成\"日内交易分享 - 期权\"。 \"期權\"是繁体，目标简体中文应为\"期权\"。 \"BTO\"保留。 \"$QQQ\"保留。 \"626c\"保留。 \"01/26\"保留。 \"@0.85\"保留。 第一行\"美股会员网-机会平台:\" 翻译为\"美股会员网-机会平台:\"，但\"美股会员网\"可能是一个网站名，保留。 \"机会平台\"可能是平台名称，保留。但整体可以保留原样，因为是名称。但为了翻译，可能需要翻译为\"美股会员网-机会平台:\"，但\"美股会员网\"已经是中文，只是繁体？\"美股会员网\"是简体中文？原文是\"美股会员网\"，看起来是简体中文，但\"网\"是简体，所以可能已经是简体。但原文是自动检测语言，可能包含中文。实际上第一行是中文\"美股会员网-机会平台:\"，所以不需要翻译，但目标语言是简体中文，如果已经是简体，保留即可。但\"机会平台\"也是中文。所以第一行保持不变。 \"@everyone\" 保留。 最后有一个\"</think>\"可能是分隔符或占位符，保留。\n\n因此翻译后的文本应该类似于：\n\n```\n美股会员网-机会平台:\n@everyone \n日内交易分享 - 期权:  BTO $QQQ 626c 01/26 @0.85    </think>\n```\n\n但注意原始文本中有多个空格，我们尽量保留。原始文本中\"BTO $QQQ 626c 01/26 @0.85    </think>\" 后面有多个空格和\"</think>\"。我们保留。\n\n另外，原始文本中\"DayTrade分享 - 期權:\" 的\"期權\"是繁体，我们转换为简体\"期权\"。\n\n所以最终输出应该是：\n\n```\n美股会员网-机会平台:\n@everyone \n日内交易分享 - 期权:  BTO $QQQ 626c 01/26 @0.85    </think>\n```\n\n确保没有多余的解释。</think>美股会员网-机会平台:\n@everyone \n日内交易分享 - 期权:  BTO $QQQ 626c 01/26 @0.85    </think>",
+      "timestamp": "2026-01-26T15:32:50.516000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_626.0c_20260211204007"
+    },
+    {
+      "id": "1465368873137340482",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  买入开仓 $QQQ 626看涨期权 到期日01/26 @0.85",
+      "timestamp": "2026-01-26T15:32:44.593000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1465356166803755258",
+      "channel_id": "1454140095442583715",
+      "content": "Given the instruction \"DO NOT add any explanations, introductory text, or any content other than the translated text itself.\" We should just output the translation of the actual content.\n\nThus final answer as above.\n\nBut to be thorough, we could check if there is any other part that needs translation. The first line \"美股会员网-机会平台:\" is already in Chinese, but it's Simplified? \"会员网\" is Simplified. So it's fine. No change.\n\nThus output.</think>美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期权:  BTO $NVDA 197.5c 01/30 @0.66",
+      "timestamp": "2026-01-26T14:42:15.167000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1464317205645885511",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人  \n日内交易分享 - 期权:  +246%🔥🔥",
+      "timestamp": "2026-01-23T17:53:47.524000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1464315564104224852",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  +154% 我在最高点入场",
+      "timestamp": "2026-01-23T17:47:16.150000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1464297070243348564",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人  \n日内交易分享 - 期权:  +51%",
+      "timestamp": "2026-01-23T16:33:46.870000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1464293746203033862",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人  \n日内交易分享 - 期权:  买入开仓 $QQQ 624看跌期权 1月23日到期 @0.72",
+      "timestamp": "2026-01-23T16:20:34.357000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463939798514270401",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  BTO $QQQ 623 call 01/22 @0.40",
+      "timestamp": "2026-01-22T16:54:06.652000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463922282077356229",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  我已止损这笔QQQ交易",
+      "timestamp": "2026-01-22T15:44:30.408000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463917665277182168",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  BTO $QQQ 615p 01/22 @0.70",
+      "timestamp": "2026-01-22T15:26:09.677000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_615.0p_20260211204007"
+    },
+    {
+      "id": "1463903609946378448",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  今日市场将充斥各类报告与数据波动\n\n08:30 → 初领失业救济金人数\n08:30 → 美国GDP数据发布\n09:00 → 美联储注入69亿美元流动性\n10:00 → 个人消费支出物价指数\n16:30 → 美联储资产负债表\n18:30 → 日本通胀数据\n22:00 → 日本利率决议\n\n预期市场将出现剧烈波动",
+      "timestamp": "2026-01-22T14:30:18.625000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463600250542624850",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@所有人  \n日内交易分享 - 期权:  买入开仓 $QQQ 607看跌期权 到期日01/21 @0.48  \n彩票单。",
+      "timestamp": "2026-01-21T18:24:52.107000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463562875653193933",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  +382% 够了🔥🔥🔥\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  +382% 够了🔥🔥🔥",
+      "timestamp": "2026-01-21T15:56:21.239000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463558484611174585",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  +298%🔥🔥\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  +298%🔥🔥",
+      "timestamp": "2026-01-21T15:38:54.333000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463557109000966229",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  +192%",
+      "timestamp": "2026-01-21T15:33:26.362000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463553666425294909",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  QQQ +157%🔥",
+      "timestamp": "2026-01-21T15:19:45.588000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463549128293355691",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  QQQ 翻倍 +118%🔥\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  QQQ 翻倍 +118%🔥",
+      "timestamp": "2026-01-21T15:01:43.613000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463546674109612144",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  +30%\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  +30%",
+      "timestamp": "2026-01-21T14:51:58.490000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463546670347452670",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  QQQ +30%。\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  QQQ +30%。",
+      "timestamp": "2026-01-21T14:51:57.593000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463546442038644766",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  +18%\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  +18%",
+      "timestamp": "2026-01-21T14:51:03.160000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1463543440489844843",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  BTO $QQQ 613c 01/21 @0.82\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  买入开仓 $QQQ 613看涨期权 1月21日到期 @0.82",
+      "timestamp": "2026-01-21T14:39:07.535000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_613.0c_20260211204007"
+    },
+    {
+      "id": "1463543396114370686",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  BTO $QQQ 613c 01/20 @0.82\n\n美股会员网-机会平台：\n@所有人  \n日内交易分享 - 期权：买入开仓 $QQQ 613看涨期权 到期日1月20日 @0.82美元",
+      "timestamp": "2026-01-21T14:38:56.955000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_613.0c_20260211204007"
+    },
+    {
+      "id": "1463358888999911507",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:\n@everyone \nDayTrade分享 - 期權:  昨晚應該吃爽了吧，610p+330%，611p+410%，TACO怎麼可能那麼快到來，堅定買了兩筆PUT合理\n\n美股会员网-机会平台:\n@所有人 \n日内交易分享 - 期权:  昨晚应该赚得很爽吧，610看跌期权+330%，611看跌期权+410%，TACO怎么可能那么快到来，坚定买了两笔看跌期权合理",
+      "timestamp": "2026-01-21T02:25:47.031000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471151013477220383",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    Bounded\n\nJpmInvestments：\n    有界",
+      "timestamp": "2026-02-11T14:28:54.277000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471152736195317936",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: TSLA +220% 🔥🔥",
+      "timestamp": "2026-02-11T14:35:45.005000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471153278392864840",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nDamn Tesla !!! NVDA , AAPL \n\nQqq overnight bangs !\n\n@everyone \n\n该死的特斯拉！！！ NVDA，AAPL \n\nQqq过夜暴涨！",
+      "timestamp": "2026-02-11T14:37:54.275000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471154940457255036",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nOpen\nQQQ 02/11 618C @.75  (SL $614.30)\n",
+      "timestamp": "2026-02-11T14:44:30.542000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_618.0c_20260211224431"
+    },
+    {
+      "id": "1471155181608767580",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/11 618C @.90 **(+20%)**\n",
+      "timestamp": "2026-02-11T14:45:28.037000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471155352991961118",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nUpdate\nQQQ 02/11 618C @1.02 **(+35%)**\n",
+      "timestamp": "2026-02-11T14:46:08.898000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471157541231657052",
+      "channel_id": "1458011589624987699",
+      "content": "JpmInvestments：\n    @JPM\n\nJpmInvestments：\n    @JPM\nClose\nAll out of QQQ @.62 \n> No follow through\n",
+      "timestamp": "2026-02-11T14:54:50.615000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471158904565010435",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 615C\n> Expiry 0dte\n> Entry: 1.23\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 615C\n> 到期: 0天到期\n> 入场: 1.23\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T15:00:15.659000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_615.0c_20260211230016"
+    },
+    {
+      "id": "1471159224053792980",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone 1.50 !\n\n@everyone 1.50 !",
+      "timestamp": "2026-02-11T15:01:31.831000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471159275983208550",
+      "channel_id": "1459878042955677869",
+      "content": "They let you grab 1.19\n\n他们让你抓取 1.19",
+      "timestamp": "2026-02-11T15:01:44.212000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471161587682246914",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6995C\n> Expiry 0dte\n> Entry: 1.55\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6995C\n> 到期日: 0dte\n> 入场: 1.55\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T15:10:55.364000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6995.0c_20260211231055"
+    },
+    {
+      "id": "1471161756326821989",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 613C\n> Expiry 0dte\n> Entry: 1.41\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 613C\n> 到期: 0天到期\n> 入场: 1.41\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T15:11:35.572000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_613.0c_20260211231136"
+    },
+    {
+      "id": "1471162632332382260",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6980C\n> Expiry 0dte\n> Entry: 2.70\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6980C\n> 到期日: 0dte\n> 入场: 2.70\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T15:15:04.428000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6980.0c_20260211231504"
+    },
+    {
+      "id": "1471163583055396874",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 612C\n> Expiry 0dte\n> Entry: 1.23\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 612C\n> 到期: 0天到期\n> 进场: 1.23\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T15:18:51.098000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_612.0c_20260211231851"
+    },
+    {
+      "id": "1471164361564492050",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 610C\n> Expiry 0dte\n> Entry: 1.68\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 610C\n> 到期: 0天到期\n> 入场: 1.68\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T15:21:56.709000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_610.0c_20260211232157"
+    },
+    {
+      "id": "1471165415446282272",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO $AAPL 280c 02/13 @1.00",
+      "timestamp": "2026-02-11T15:26:07.974000+00:00",
+      "has_order": true,
+      "order_id": "AAPL_280.0c_20260211232608"
+    },
+    {
+      "id": "1471166059808555161",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6960C\n> Expiry 0dte\n> Entry: 4.40\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6960C\n> 到期日: 0dte\n> 入场: 4.40\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T15:28:41.602000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6960.0c_20260211232842"
+    },
+    {
+      "id": "1471166491427606675",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权: Apple +18%",
+      "timestamp": "2026-02-11T15:30:24.508000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471166824052822170",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +39%",
+      "timestamp": "2026-02-11T15:31:43.812000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471167299775107259",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  62%了",
+      "timestamp": "2026-02-11T15:33:37.233000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471168461588795526",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +93% 吃🍎~",
+      "timestamp": "2026-02-11T15:38:14.231000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471169041799450871",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nYou’ll probably turn bullish when  It reaches the top lol\n\n@everyone \n\n当它达到顶峰时，你可能会变得看涨，哈哈。",
+      "timestamp": "2026-02-11T15:40:32.564000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471169204517601372",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  BTO NVDA 192.5 call 02/11 价格0.33。  \n彩票单 不要重仓。",
+      "timestamp": "2026-02-11T15:41:11.359000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471169861798334476",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  $NVDA +48%",
+      "timestamp": "2026-02-11T15:43:48.067000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471172610791444735",
+      "channel_id": "1459878042955677869",
+      "content": "https://tenor.com/view/michael-jackson-comendo-picoca-gif-9669437860846841235\n\nhttps://tenor.com/view/michael-jackson-comendo-picoca-gif-9669437860846841235",
+      "timestamp": "2026-02-11T15:54:43.478000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471172612464836727",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone\n\n@大家",
+      "timestamp": "2026-02-11T15:54:43.877000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471172808871645297",
+      "channel_id": "1454140095442583715",
+      "content": "美股会员网-机会平台:  \n@everyone  \nDayTrade分享 - 期权:  +123%",
+      "timestamp": "2026-02-11T15:55:30.704000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471172950475669566",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone qqq 613 Vwap here this is where you guys get angry again in super super happy if market likes you today then  615 next\n\n@everyone qqq 613 Vwap 在这里，你们又会生气了，如果市场今天喜欢你们，那么下一个是 615。",
+      "timestamp": "2026-02-11T15:56:04.465000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471175352381341922",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nRemember VRT stock gave you last week at 190 it’s now 240 they had great earnings ! +30% stock growth in a week , WINNER 🏆\n\n@everyone \n\n记得上周给你们的VRT股票吗？当时是190，现在是240，他们的收益非常好！一周内增长了30%的股票，赢家🏆",
+      "timestamp": "2026-02-11T16:05:37.124000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471177371234336851",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $PLTR\n> Strike: 138C\n> Expiry 2/13\n> Entry: 1.47\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $PLTR\n> 行权价: 138C\n> 到期日: 2/13\n> 进场价: 1.47\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T16:13:38.456000+00:00",
+      "has_order": true,
+      "order_id": "PLTR_138.0c_20260212001339"
+    },
+    {
+      "id": "1471178985806233681",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $HOOD\n> Strike: 78C\n> Expiry 2/13\n> Entry: 1.16\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $HOOD\n> 行权价: 78C\n> 到期日: 2/13\n> 入场价: 1.16\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T16:20:03.400000+00:00",
+      "has_order": true,
+      "order_id": "HOOD_78.0c_20260212002003"
+    },
+    {
+      "id": "1471179864064262450",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SNDK\n> Strike: 620C\n> Expiry 2/13\n> Entry: 14.90 \n\nMoving hard \n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SNDK\n> 行权价: 620C\n> 到期日: 2/13\n> 进场价: 14.90 \n\n强势上涨\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T16:23:32.793000+00:00",
+      "has_order": true,
+      "order_id": "SNDK_620.0c_20260212002333"
+    },
+    {
+      "id": "1471183680423727104",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $AAPL\n> Strike: 280C\n> Expiry 2/13\n> Entry: 1.73\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $AAPL\n> 行权价: 280C\n> 到期日: 2/13\n> 入场价: 1.73\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T16:38:42.684000+00:00",
+      "has_order": true,
+      "order_id": "AAPL_280.0c_20260212003847"
+    },
+    {
+      "id": "1471186841746145415",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6975C\n> Expiry 0dte\n> Entry: 1.65\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6975C\n> 到期: 0天到期\n> 入场: 1.65\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T16:51:16.402000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6975.0c_20260212005117"
+    },
+    {
+      "id": "1471189321733115968",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6970C\n> Expiry 0dte\n> Entry: 1.70\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6970C\n> 到期: 0天到期\n> 入场: 1.70\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T17:01:07.677000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6970.0c_20260212010108"
+    },
+    {
+      "id": "1471318905594056910",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone  **TODAYS RECAP\n\n🟢$NVDA 190C 2/11 swing (+157%) \n🟢$AMD 220C 2/13 swing (+18%) \n🟢$AAPL 275C 2/11 swing (+274%) \n🟢$TSLA 432.5C 2/11 swing (+239%) \n🟢$QQQ 614C 2/11 swing (+167%) \n🟢$QQQ 615C (0DTE) (+22%) \n🔴$SPX 6995C (0DTE) (X) \n🟢$QQQ 613C (0DTE) (+57%) \n🔴$SPX 6980C (0DTE) (-19%) comeback trade from below \n🟢$QQQ 612C (0DTE) (+152%) \n🟢$QQQ 610C (0DTE) (+197%) \n🟢$SPX 6960C (0DTE) (+120%) \n🟢$HOOD 78C 2/13 (+81%) \n🟢$SNDK 620C 2/13 (+26%) \n🟢$AAPL 280C 2/13 (+37%) \n🟢$SPX 6975C (0DTE) (+112%)\n🟢$SPX 6970C (0DTE) (+205%) \n🟢$QQQ 616C 2/12 (+62%) \n🟢$QQQ 623C 2/17 (+54%) \n🟢$SPX 6955C (0DTE) (+73%) \n🟢$SPX 6950C (0DTE) (+221%)**\n\n@everyone  **今天的回顾\n\n🟢$NVDA 190C 2/11 摆动 (+157%) \n🟢$AMD 220C 2/13 摆动 (+18%) \n🟢$AAPL 275C 2/11 摆动 (+274%) \n🟢$TSLA 432.5C 2/11 摆动 (+239%) \n🟢$QQQ 614C 2/11 摆动 (+167%) \n🟢$QQQ 615C (0DTE) (+22%) \n🔴$SPX 6995C (0DTE) (X) \n🟢$QQQ 613C (0DTE) (+57%) \n🔴$SPX 6980C (0DTE) (-19%) 从下方反弹交易 \n🟢$QQQ 612C (0DTE) (+152%) \n🟢$QQQ 610C (0DTE) (+197%) \n🟢$SPX 6960C (0DTE) (+120%) \n🟢$HOOD 78C 2/13 (+81%) \n🟢$SNDK 620C 2/13 (+26%) \n🟢$AAPL 280C 2/13 (+37%) \n🟢$SPX 6975C (0DTE) (+112%)\n🟢$SPX 6970C (0DTE) (+205%) \n🟢$QQQ 616C 2/12 (+62%) \n🟢$QQQ 623C 2/17 (+54%) \n🟢$SPX 6955C (0DTE) (+73%) \n🟢$SPX 6950C (0DTE) (+221%)**",
+      "timestamp": "2026-02-12T01:36:02.877000+00:00",
+      "has_order": true,
+      "order_id": "NVDA_190.0c_20260212133206"
+    },
+    {
+      "id": "1471250442901127280",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 618C\n> Expiry 2/12\n> Entry: .57\n\nTomorrow \n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 618C\n> 到期日 2/12\n> 入场: .57\n\n明天 \n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T21:04:00.099000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_618.0c_20260212133206"
+    },
+    {
+      "id": "1471244663842275348",
+      "channel_id": "1459878042955677869",
+      "content": "200% !!!\n\n200% !!!",
+      "timestamp": "2026-02-11T20:41:02.264000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471244631378231316",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone BOOOOOM $340 from $115 bucks in minutes\n\n@everyone 哇哦 $340 从 $115 在几分钟内",
+      "timestamp": "2026-02-11T20:40:54.524000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471244481109037340",
+      "channel_id": "1459878042955677869",
+      "content": "lol always laughing at the bangers\n\n哈哈，总是对那些热门歌曲感到好笑",
+      "timestamp": "2026-02-11T20:40:18.697000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471244441892421843",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone 2.15 !!!\n\n@everyone 2.15 !!!",
+      "timestamp": "2026-02-11T20:40:09.347000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471244307511115931",
+      "channel_id": "1459878042955677869",
+      "content": "Dipped and jumped twice\n\n浸泡并跳了两次",
+      "timestamp": "2026-02-11T20:39:37.308000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471244249315151934",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone 1.70\n\n@everyone 1.70",
+      "timestamp": "2026-02-11T20:39:23.433000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471242433684836383",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6950C\n> Expiry 0dte\n> Entry: 1.15\n\nLotto\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6950C\n> 到期: 0天到期\n> 入场: 1.15\n\n彩票\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T20:32:10.553000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6950.0c_20260212133206"
+    },
+    {
+      "id": "1471223090888310825",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nLet’s not forget the monster wake up profits on qqq Tesla overnight and nvda overnight we woke up banked and then banked even more\n\n@everyone \n\n让我们不要忘记在qqq特斯拉和nvda的过夜交易中获得的巨额利润，我们醒来时已经赚了，然后又赚了更多。",
+      "timestamp": "2026-02-11T19:15:18.871000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471222847388254293",
+      "channel_id": "1459878042955677869",
+      "content": "Perfect day !!\n\n完美的一天！！",
+      "timestamp": "2026-02-11T19:14:20.816000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471222836352782399",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\nSPX , QQQ !!!! PLTR , HOOD !!!!! Now going let’s goooo\n\n@everyone \n\nSPX , QQQ !!!! PLTR , HOOD !!!!! 现在出发，让我们走吧！！！",
+      "timestamp": "2026-02-11T19:14:18.185000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471211665914859563",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $SPX\n> Strike: 6955C\n> Expiry 0dte\n> Entry: 4.45 \n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $SPX\n> 行权价: 6955C\n> 到期: 0天到期\n> 入场: 4.45 \n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T18:29:54.945000+00:00",
+      "has_order": true,
+      "order_id": "SPX_6955.0c_20260212133206"
+    },
+    {
+      "id": "1471209075982471229",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $NVDA\n> Strike: 197.5C\n> Expiry 2/13\n> Entry: .44\n\nLotto = far strike highly risky \n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $NVDA\n> 行权价: 197.5C\n> 到期日 2/13\n> 入场: .44\n\n乐透 = 远期行权价 高风险 \n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T18:19:37.457000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471208375101554924",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 623C\n> Expiry 2/17\n> Entry: .87\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 623C\n> 到期日: 2/17\n> 进场价: .87\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T18:16:50.354000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_623.0c_20260212133206"
+    },
+    {
+      "id": "1471205035768549438",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone \n\n**==============================\n    OCULUS TRADING  SIGNAL\n> Ticker:   $QQQ\n> Strike: 616C\n> Expiry 2/12 \n> Entry: 1.23\n\n==============================\n\n==============================**\n\n@everyone \n\n**==============================\n    OCULUS 交易信号\n> 股票代码:   $QQQ\n> 行权价: 616C\n> 到期日: 2/12 \n> 入场: 1.23\n\n==============================\n\n==============================**",
+      "timestamp": "2026-02-11T18:03:34.195000+00:00",
+      "has_order": true,
+      "order_id": "QQQ_616.0c_20260212133206"
+    },
+    {
+      "id": "1471199969691045899",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone AAPL popped good too \n\nSNDK popped back \n\n\nPltr and HOOD weaker then the rally for some reason, The market legged higher and they didn’t follow, not yet , they see high risk high reward these stocks can move 10% days\n\n@everyone AAPL 也涨得不错\n\nSNDK 回升了\n\nPltr 和 HOOD 的表现比上涨的行情要弱，不知道为什么，市场上涨了，但它们没有跟上，暂时还没有，它们看到高风险高回报，这些股票可能在一天内波动 10%",
+      "timestamp": "2026-02-11T17:43:26.348000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471195799659479071",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone  YO you freebies in here I know you’re not committed to a single thing in your life \n\nBut the paid ones know what they fucking paying for 🎯\n\n@everyone  嘿，你们这些免费用户，我知道你们在生活中没有对任何事情投入过\n\n但付费用户知道他们到底在付什么钱 🎯",
+      "timestamp": "2026-02-11T17:26:52.135000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471195517022245004",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone are you amazed\n\n@everyone 你们惊讶吗",
+      "timestamp": "2026-02-11T17:25:44.749000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471191100780712008",
+      "channel_id": "1459878042955677869",
+      "content": "$SPY\n\n$SPY",
+      "timestamp": "2026-02-11T17:08:11.835000+00:00",
+      "has_order": false,
+      "order_id": null
+    },
+    {
+      "id": "1471191069109653584",
+      "channel_id": "1459878042955677869",
+      "content": "@everyone  think this entire area is supper\n\n@everyone 认为整个区域都很棒",
+      "timestamp": "2026-02-11T17:08:04.284000+00:00",
+      "has_order": false,
+      "order_id": null
+    }
+  ]
+}
