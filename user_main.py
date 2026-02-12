@@ -594,5 +594,5 @@ def run():
         print(f"\n錯誤: {e}")
 
 
-if __name__ == "__main__":
-    run()
+#if __name__ == "__main__":
+#    run()
